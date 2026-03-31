@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9a8d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbcfe8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- Decorative circles background -->
+  <circle cx="50" cy="100" r="80" fill="#f472b6" opacity="0.08"/>
+  <circle cx="750" cy="500" r="100" fill="#e879f9" opacity="0.08"/>
+  <circle cx="700" cy="80" r="60" fill="#a78bfa" opacity="0.1"/>
+
+  <!-- Balloon strings -->
+  <path d="M200,260 Q195,310 200,350" stroke="#db2777" stroke-width="1.5" fill="none"/>
+  <path d="M300,230 Q295,290 300,350" stroke="#a21caf" stroke-width="1.5" fill="none"/>
+  <path d="M400,240 Q405,295 400,350" stroke="#7c3aed" stroke-width="1.5" fill="none"/>
+  <path d="M500,235 Q505,290 500,350" stroke="#be185d" stroke-width="1.5" fill="none"/>
+  <path d="M600,255 Q595,305 600,350" stroke="#db2777" stroke-width="1.5" fill="none"/>
+
+  <!-- Balloons -->
+  <ellipse cx="200" cy="195" rx="50" ry="65" fill="#f472b6" opacity="0.9"/>
+  <ellipse cx="188" cy="175" rx="15" ry="20" fill="#ffffff" opacity="0.25"/>
+
+  <ellipse cx="300" cy="168" rx="50" ry="65" fill="#e879f9" opacity="0.9"/>
+  <ellipse cx="288" cy="148" rx="15" ry="20" fill="#ffffff" opacity="0.25"/>
+
+  <ellipse cx="400" cy="175" rx="50" ry="65" fill="#c084fc" opacity="0.9"/>
+  <ellipse cx="388" cy="155" rx="15" ry="20" fill="#ffffff" opacity="0.25"/>
+
+  <ellipse cx="500" cy="170" rx="50" ry="65" fill="#fb7185" opacity="0.9"/>
+  <ellipse cx="488" cy="150" rx="15" ry="20" fill="#ffffff" opacity="0.25"/>
+
+  <ellipse cx="600" cy="190" rx="50" ry="65" fill="#f9a8d4" opacity="0.9"/>
+  <ellipse cx="588" cy="170" rx="15" ry="20" fill="#ffffff" opacity="0.25"/>
+
+  <!-- Banner ribbon -->
+  <path d="M130,355 L670,355" stroke="#f9a8d4" stroke-width="28" stroke-linecap="round"/>
+  <path d="M130,355 L670,355" stroke="#fce7f3" stroke-width="3" stroke-linecap="round" stroke-dasharray="12,8"/>
+  <text x="400" y="361" font-family="Georgia,serif" font-size="14" fill="#9d174d" text-anchor="middle" font-weight="bold" letter-spacing="6">✦  B A B Y  S H O W E R  ✦</text>
+
+  <!-- Table -->
+  <rect x="180" y="420" width="440" height="14" rx="7" fill="#fbcfe8"/>
+  <rect x="210" y="432" width="12" height="60" rx="4" fill="#f9a8d4"/>
+  <rect x="578" y="432" width="12" height="60" rx="4" fill="#f9a8d4"/>
+
+  <!-- Cake base tiers -->
+  <rect x="320" y="385" width="160" height="38" rx="6" fill="#fff5f7" stroke="#f9a8d4" stroke-width="2"/>
+  <rect x="340" y="363" width="120" height="28" rx="5" fill="#fff0f6" stroke="#f472b6" stroke-width="1.5"/>
+  <rect x="358" y="347" width="84" height="22" rx="4" fill="#fce7f3" stroke="#e879f9" stroke-width="1.5"/>
+  <!-- Cake decorations -->
+  <circle cx="355" cy="393" r="5" fill="#f472b6"/>
+  <circle cx="380" cy="393" r="5" fill="#e879f9"/>
+  <circle cx="405" cy="393" r="5" fill="#f472b6"/>
+  <circle cx="430" cy="393" r="5" fill="#e879f9"/>
+  <circle cx="455" cy="393" r="5" fill="#f472b6"/>
+  <!-- Candle -->
+  <rect x="397" y="333" width="6" height="16" rx="2" fill="#fbbf24"/>
+  <ellipse cx="400" cy="330" rx="5" ry="7" fill="#fde68a" opacity="0.9"/>
+  <ellipse cx="400" cy="327" rx="3" ry="4" fill="#fbbf24"/>
+
+  <!-- Stars/sparkles -->
+  <circle cx="120" cy="290" r="3" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="680" cy="300" r="3" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="140" cy="440" r="2" fill="#f9a8d4" opacity="0.8"/>
+  <circle cx="660" cy="440" r="2" fill="#f9a8d4" opacity="0.8"/>
+  <text x="120" cy="285" font-size="14" fill="#fbbf24" opacity="0.6">✦</text>
+  <text x="670" y="295" font-size="14" fill="#fbbf24" opacity="0.6">✦</text>
+  <text x="700" y="200" font-size="10" fill="#f472b6" opacity="0.5">✦</text>
+  <text x="80" y="220" font-size="10" fill="#e879f9" opacity="0.5">✦</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="530" font-family="Georgia,serif" font-size="34" fill="#9d174d" text-anchor="middle" opacity="0.8">Baby Shower</text>
+  <text x="400" y="562" font-family="Georgia,serif" font-size="14" fill="#be185d" text-anchor="middle" opacity="0.5" letter-spacing="4">A  N E W  B E G I N N I N G</text>
+</svg>

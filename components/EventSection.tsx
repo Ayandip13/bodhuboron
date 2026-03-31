@@ -41,8 +41,15 @@ const events: EventItem[] = [
     id: "baby-shower",
     title: "Baby Shower",
     subtitle: "A new beginning",
-    image: "/event-babyshower.png",
-    objectPosition: "object-bottom",
+    image: "/event-babyshower.svg",
+    objectPosition: "object-center",
+  },
+  {
+    id: "Live-Event",
+    title: "Live Event",
+    subtitle: "Live Event",
+    image: "/event-live.png",
+    objectPosition: "object-center",
   },
 ];
 

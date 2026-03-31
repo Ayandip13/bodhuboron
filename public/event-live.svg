@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#050510;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0f0c29;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="amber" cx="28%" cy="0%" r="55%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.55" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="violet" cx="72%" cy="0%" r="55%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.55" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="red" cx="50%" cy="0%" r="45%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="stagelight" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.18" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#amber)"/>
+  <rect width="800" height="600" fill="url(#violet)"/>
+  <rect width="800" height="600" fill="url(#red)"/>
+
+  <!-- Stars -->
+  <circle cx="60" cy="40" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="130" cy="25" r="1" fill="white" opacity="0.5"/>
+  <circle cx="250" cy="55" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="400" cy="30" r="1" fill="white" opacity="0.5"/>
+  <circle cx="580" cy="45" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="700" cy="20" r="1" fill="white" opacity="0.4"/>
+  <circle cx="760" cy="60" r="1.5" fill="white" opacity="0.5"/>
+
+  <!-- Truss / rigging bar -->
+  <rect x="60" y="90" width="680" height="10" rx="5" fill="#2d2b55" stroke="#4338ca" stroke-width="1"/>
+  <!-- Hanging lights on truss -->
+  <rect x="120" y="99" width="8" height="20" fill="#312e81"/>
+  <circle cx="124" cy="125" r="10" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="124" cy="125" r="6" fill="#fde68a"/>
+
+  <rect x="230" y="99" width="8" height="20" fill="#312e81"/>
+  <circle cx="234" cy="125" r="10" fill="#8b5cf6" opacity="0.9"/>
+  <circle cx="234" cy="125" r="6" fill="#c4b5fd"/>
+
+  <rect x="340" y="99" width="8" height="20" fill="#312e81"/>
+  <circle cx="344" cy="125" r="10" fill="#ef4444" opacity="0.9"/>
+  <circle cx="344" cy="125" r="6" fill="#fca5a5"/>
+
+  <rect x="454" y="99" width="8" height="20" fill="#312e81"/>
+  <circle cx="458" cy="125" r="10" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="458" cy="125" r="6" fill="#fde68a"/>
+
+  <rect x="564" y="99" width="8" height="20" fill="#312e81"/>
+  <circle cx="568" cy="125" r="10" fill="#8b5cf6" opacity="0.9"/>
+  <circle cx="568" cy="125" r="6" fill="#c4b5fd"/>
+
+  <rect x="668" y="99" width="8" height="20" fill="#312e81"/>
+  <circle cx="672" cy="125" r="10" fill="#ef4444" opacity="0.9"/>
+  <circle cx="672" cy="125" r="6" fill="#fca5a5"/>
+
+  <!-- Light beams from truss -->
+  <polygon points="124,135 60,420 188,420" fill="#fbbf24" opacity="0.06"/>
+  <polygon points="234,135 170,420 298,420" fill="#8b5cf6" opacity="0.07"/>
+  <polygon points="344,135 290,420 398,420" fill="#ef4444" opacity="0.06"/>
+  <polygon points="458,135 404,420 512,420" fill="#fbbf24" opacity="0.07"/>
+  <polygon points="568,135 514,420 622,420" fill="#8b5cf6" opacity="0.06"/>
+  <polygon points="672,135 618,420 726,420" fill="#ef4444" opacity="0.06"/>
+
+  <!-- Stage platform -->
+  <rect x="80" y="420" width="640" height="22" rx="4" fill="#312e81"/>
+  <rect x="80" y="430" width="640" height="6" fill="#4338ca" opacity="0.5"/>
+  <rect x="0" y="442" width="800" height="158" fill="#0a0818"/>
+
+  <!-- Stage glow on floor -->
+  <rect width="800" height="600" fill="url(#stagelight)"/>
+
+  <!-- Spotlight pools on stage -->
+  <ellipse cx="190" cy="435" rx="65" ry="15" fill="#fbbf24" opacity="0.25"/>
+  <ellipse cx="400" cy="435" rx="75" ry="18" fill="#ffffff" opacity="0.12"/>
+  <ellipse cx="610" cy="435" rx="65" ry="15" fill="#8b5cf6" opacity="0.25"/>
+
+  <!-- Performer silhouette -->
+  <ellipse cx="400" cy="377" rx="16" ry="19" fill="#0a0818"/>
+  <rect x="387" y="394" width="26" height="32" rx="5" fill="#0a0818"/>
+  <!-- Arm outstretched -->
+  <rect x="350" y="398" width="38" height="7" rx="3" fill="#0a0818" transform="rotate(-20,388,402)"/>
+  <rect x="413" y="398" width="38" height="7" rx="3" fill="#0a0818" transform="rotate(20,413,402)"/>
+
+  <!-- Crowd silhouettes row 1 (back) -->
+  <ellipse cx="60" cy="480" rx="20" ry="25" fill="#12103a"/>
+  <ellipse cx="110" cy="472" rx="18" ry="22" fill="#12103a"/>
+  <ellipse cx="158" cy="478" rx="20" ry="24" fill="#12103a"/>
+  <ellipse cx="206" cy="470" rx="19" ry="23" fill="#12103a"/>
+  <ellipse cx="254" cy="475" rx="21" ry="25" fill="#12103a"/>
+  <ellipse cx="302" cy="468" rx="18" ry="22" fill="#12103a"/>
+  <ellipse cx="350" cy="474" rx="20" ry="24" fill="#12103a"/>
+  <ellipse cx="400" cy="466" rx="19" ry="23" fill="#12103a"/>
+  <ellipse cx="450" cy="472" rx="21" ry="25" fill="#12103a"/>
+  <ellipse cx="498" cy="467" rx="18" ry="22" fill="#12103a"/>
+  <ellipse cx="546" cy="473" rx="20" ry="24" fill="#12103a"/>
+  <ellipse cx="594" cy="469" rx="19" ry="23" fill="#12103a"/>
+  <ellipse cx="642" cy="474" rx="21" ry="25" fill="#12103a"/>
+  <ellipse cx="690" cy="468" rx="18" ry="22" fill="#12103a"/>
+  <ellipse cx="736" cy="475" rx="20" ry="24" fill="#12103a"/>
+
+  <!-- Crowd hands raised -->
+  <rect x="57" y="455" width="5" height="16" rx="2" fill="#12103a"/>
+  <rect x="206" y="448" width="5" height="16" rx="2" fill="#12103a"/>
+  <rect x="350" y="452" width="5" height="16" rx="2" fill="#12103a"/>
+  <rect x="498" y="447" width="5" height="16" rx="2" fill="#12103a"/>
+  <rect x="642" y="452" width="5" height="16" rx="2" fill="#12103a"/>
+
+  <!-- LIVE badge -->
+  <rect x="340" y="530" width="120" height="28" rx="14" fill="#ef4444" opacity="0.9"/>
+  <text x="400" y="549" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold" letter-spacing="4">● LIVE</text>
+
+  <!-- Label -->
+  <text x="400" y="520" font-family="Georgia,serif" font-size="14" fill="#a78bfa" text-anchor="middle" opacity="0.6" letter-spacing="5">F E E L  T H E  E N E R G Y</text>
+</svg>
