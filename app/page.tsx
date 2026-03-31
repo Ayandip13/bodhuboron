@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import WeddingSection from "@/components/WeddingSection";
 import EventSection from "@/components/EventSection";
+import PreWeddingSection from "@/components/PreWeddingSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WeddingSection />
       <EventSection />
+      <PreWeddingSection />
     </main>
   );
 }
