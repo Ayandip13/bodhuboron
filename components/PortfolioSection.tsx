@@ -148,26 +148,26 @@ export default function PortfolioSection() {
       {/* Lightbox Modal */}
       {selectedItem && (
         <div
-          className={`fixed inset-0 z-60 bg-black/98 backdrop-blur-xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0"
+          className={`fixed inset-0 z-60 bg-black/95 backdrop-blur-2xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0 invisible"
             }`}
           onClick={closeLightbox}
         >
           {/* Close button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-8 right-8 text-white/40 hover:text-white transition-colors duration-300 p-2 group"
+            className="absolute top-8 right-8 text-neutral-500 hover:text-white transition-all duration-500 p-2 group z-80"
           >
-            <svg className="w-8 h-8 font-thin transition-transform duration-500 group-hover:rotate-90" fill="none" stroke="currentColor" strokeWidth="1" viewBox="0 0 24 24">
+            <svg className="w-8 h-8 font-thin transition-transform duration-700 group-hover:rotate-90" fill="none" stroke="currentColor" strokeWidth="0.5" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
 
           {/* Modal Panel */}
           <div
-            className="relative w-full h-full max-w-6xl max-h-[80vh] flex flex-col items-center justify-center transition-all duration-500 scale-100"
+            className="relative w-full h-full max-w-6xl max-h-[75vh] flex flex-col items-center justify-center transition-all duration-700 scale-100"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full shadow-[0_0_100px_-20px_rgba(255,255,255,0.1)]">
               <Image
                 src={selectedItem.src}
                 alt={selectedItem.alt}
@@ -176,13 +176,13 @@ export default function PortfolioSection() {
                 priority
               />
             </div>
-
+            
             {/* Info Legend */}
-            <div className="mt-8 text-center">
-              <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-2 font-light">
+            <div className="mt-12 text-center">
+              <p className="text-[9px] tracking-[0.8em] uppercase text-neutral-500 mb-2 font-medium">
                 {selectedItem.category}
               </p>
-              <h3 className="text-white text-sm tracking-[0.2em] font-light uppercase">
+              <h3 className="text-white text-xs tracking-[0.3em] font-light uppercase">
                 {selectedItem.alt}
               </h3>
             </div>

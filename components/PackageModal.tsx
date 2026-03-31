@@ -65,7 +65,7 @@ export function PackageModal({
       {/* Backdrop */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 z-60 bg-black/70 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-60 bg-black/10 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         aria-hidden="true"
       />
@@ -80,7 +80,7 @@ export function PackageModal({
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className={`relative w-full max-w-2xl bg-neutral-800 border border-white/15 rounded-2xl shadow-2xl pointer-events-auto transition-all duration-300 ${isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-6"
+          className={`relative w-full max-w-2xl bg-neutral-950 border border-white/15 rounded-2xl shadow-2xl pointer-events-auto transition-all duration-300 ${isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-6"
             }`}
         >
           {/* Modal Header */}
