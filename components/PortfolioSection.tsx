@@ -70,7 +70,7 @@ export default function PortfolioSection() {
     <>
       <section id="portfolio" className="w-full py-24 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Header */}
           <div className="flex flex-col items-center text-center mb-12">
             <p className="text-[10px] tracking-[0.45em] uppercase text-neutral-400 mb-4 font-medium">
@@ -92,16 +92,14 @@ export default function PortfolioSection() {
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`relative px-4 py-2 text-[11px] tracking-[0.3em] uppercase transition-all duration-500 font-medium ${
-                  activeFilter === category 
-                    ? "text-neutral-900" 
+                className={`relative px-4 py-2 text-[11px] cursor-pointer tracking-[0.3em] uppercase transition-all duration-500 font-medium ${activeFilter === category
+                    ? "text-neutral-900"
                     : "text-neutral-400 hover:text-neutral-600"
-                }`}
+                  }`}
               >
                 {category}
-                <span className={`absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-500 ${
-                  activeFilter === category ? "w-full opacity-100" : "w-0 opacity-0"
-                }`} />
+                <span className={`absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-500 ${activeFilter === category ? "w-full opacity-100" : "w-0 opacity-0"
+                  }`} />
               </button>
             ))}
           </div>
@@ -111,10 +109,9 @@ export default function PortfolioSection() {
             {filteredItems.map((item, index) => (
               <div
                 key={item.id}
-                className={`break-inside-avoid group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-out hover:brightness-110 hover:rotate-1 ${
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                }`}
-                style={{ 
+                className={`break-inside-avoid group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-out hover:brightness-110 hover:rotate-1 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                  }`}
+                style={{
                   transitionDelay: `${index * 50}ms`,
                 }}
                 onClick={() => openLightbox(item)}
@@ -128,10 +125,10 @@ export default function PortfolioSection() {
                     className="object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  
+
                   {/* Subtle Gradient Overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   {/* Content on Hover */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <p className="text-[10px] tracking-[0.3em] uppercase text-white/70 mb-1 font-medium">
@@ -151,9 +148,8 @@ export default function PortfolioSection() {
       {/* Lightbox Modal */}
       {selectedItem && (
         <div
-          className={`fixed inset-0 z-60 bg-black/98 backdrop-blur-xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${
-            selectedItem ? "opacity-100" : "opacity-0"
-          }`}
+          className={`fixed inset-0 z-60 bg-black/98 backdrop-blur-xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0"
+            }`}
           onClick={closeLightbox}
         >
           {/* Close button */}
@@ -180,7 +176,7 @@ export default function PortfolioSection() {
                 priority
               />
             </div>
-            
+
             {/* Info Legend */}
             <div className="mt-8 text-center">
               <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-2 font-light">
