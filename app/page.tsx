@@ -5,6 +5,7 @@ import EventSection from "@/components/EventSection";
 import PreWeddingSection from "@/components/PreWeddingSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import YoutubeSection from "@/components/YoutubeSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <PreWeddingSection />
       <PortfolioSection />
       <YoutubeSection />
+      <ContactSection />
     </main>
   );
 }
