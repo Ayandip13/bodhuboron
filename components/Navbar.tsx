@@ -56,15 +56,15 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm py-4"
-          : "bg-transparent py-6"
+          ? "bg-white/95 backdrop-blur-md shadow-sm py-3 sm:py-4"
+          : "bg-transparent py-5 sm:py-6"
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a
           href="#home"
           onClick={(e) => handleLinkClick(e, "#home")}
-          className={`text-2xl font-semibold tracking-widest uppercase transition-colors duration-300 ${isScrolled ? "text-[#171717]" : "text-white"
+          className={`text-xl sm:text-2xl font-semibold tracking-widest uppercase transition-colors duration-300 ${isScrolled ? "text-[#171717]" : "text-white"
             }`}
         >
           Bodhuboron

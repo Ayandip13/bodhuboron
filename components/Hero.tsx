@@ -47,11 +47,11 @@ export default function Hero() {
 
       {/* Hero content */}
       <div
-        className={`relative z-20 flex flex-col items-center justify-center px-10 py-14 text-center max-w-3xl mx-auto transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        className={`relative z-20 flex flex-col items-center justify-center px-6 sm:px-10 py-14 text-center max-w-3xl mx-auto transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
       >
         {/* Glassmorphism depth layer */}
-        <div className="mt-5 absolute inset-0 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-2xl pointer-events-none" />
+        <div className="mt-5 absolute inset-4 sm:inset-0 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-2xl pointer-events-none" />
 
         {/* Eyebrow label */}
         <p
@@ -64,7 +64,7 @@ export default function Hero() {
 
         {/* Main heading */}
         <h1
-          className={`relative z-10 text-5xl sm:text-6xl md:text-7xl font-light tracking-[0.18em] text-white uppercase mb-5 leading-tight transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          className={`relative z-10 text-3xl sm:text-6xl md:text-7xl font-light tracking-widest sm:tracking-[0.18em] text-white uppercase mb-5 leading-tight transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           style={{
             transitionDelay: "350ms",
@@ -87,7 +87,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <h2
-          className={`relative z-10 text-[11px] sm:text-sm tracking-[0.35em] uppercase text-white/70 mb-8 font-light transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          className={`relative z-10 text-[10px] sm:text-sm tracking-[0.25em] sm:tracking-[0.35em] uppercase text-white/70 mb-8 font-light transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           style={{ transitionDelay: "550ms" }}
         >
@@ -107,7 +107,7 @@ export default function Hero() {
         <a
           href="#wedding"
           onClick={handleScrollToWedding}
-          className={`relative z-10 group inline-flex items-center justify-center gap-3 px-11 py-4 rounded-full text-[11px] tracking-[0.35em] uppercase font-medium text-white border border-white/25 bg-white/10 backdrop-blur-md hover:bg-white hover:text-black hover:border-white hover:scale-105 hover:shadow-[0_8px_40px_rgba(255,255,255,0.2)] active:scale-95 transition-all duration-400 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          className={`relative z-10 group inline-flex items-center justify-center gap-3 px-8 sm:px-11 py-3 sm:py-4 rounded-full text-[10px] sm:text-[11px] tracking-[0.2em] sm:tracking-[0.35em] uppercase font-medium text-white border border-white/25 bg-white/10 backdrop-blur-md hover:bg-white hover:text-black hover:border-white hover:scale-105 hover:shadow-[0_8px_40px_rgba(255,255,255,0.2)] active:scale-95 transition-all duration-400 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           style={{ transitionDelay: "750ms" }}
         >

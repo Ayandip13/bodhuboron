@@ -27,21 +27,21 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     // Format the message for WhatsApp
-    const whatsappNumber = "916295530167";
-    const messageLines = [
-      "*New Inquiry from Bodhuboron Website*",
-      "",
-      `*Name:* ${formData.name}`,
-      `*Phone:* ${formData.phone}`,
-      `*Event Type:* ${formData.eventType}`,
-      `*Message:* ${formData.message}`,
-    ];
-    const fullMessage = messageLines.join("\n");
-    const encodedMessage = encodeURIComponent(fullMessage);
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    // const whatsappNumber = "916295530167";
+    // const messageLines = [
+    //   "*New Inquiry from Bodhuboron Website*",
+    //   "",
+    //   `*Name:* ${formData.name}`,
+    //   `*Phone:* ${formData.phone}`,
+    //   `*Event Type:* ${formData.eventType}`,
+    //   `*Message:* ${formData.message}`,
+    // ];
+    // const fullMessage = messageLines.join("\n");
+    // const encodedMessage = encodeURIComponent(fullMessage);
+    // const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-    // Redirect to WhatsApp
-    window.open(whatsappUrl, "_blank");
+    // // Redirect to WhatsApp
+    // window.open(whatsappUrl, "_blank");
 
     setTimeout(() => {
       setIsSubmitting(false);
