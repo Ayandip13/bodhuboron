@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 import WeddingSection from "@/components/WeddingSection";
 import EventSection from "@/components/EventSection";

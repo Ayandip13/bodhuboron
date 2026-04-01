@@ -269,11 +269,11 @@ export default function EventSection() {
       </section>
 
       {/* Package Modal */}
-      <PackageModal 
-        card={selectedEvent} 
-        isOpen={isModalOpen} 
-        onClose={closeModal} 
-        headerLabel="Event Packages" 
+      <PackageModal
+        card={selectedEvent}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        headerLabel="Event Packages"
       />
     </>
   );

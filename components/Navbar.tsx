@@ -42,7 +42,7 @@ export default function Navbar() {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    
+
     const targetId = href.substring(1);
     const element = document.getElementById(targetId);
     if (element) {
@@ -55,19 +55,17 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm py-4"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a
           href="#home"
           onClick={(e) => handleLinkClick(e, "#home")}
-          className={`text-2xl font-semibold tracking-widest uppercase transition-colors duration-300 ${
-            isScrolled ? "text-[#171717]" : "text-white"
-          }`}
+          className={`text-2xl font-semibold tracking-widest uppercase transition-colors duration-300 ${isScrolled ? "text-[#171717]" : "text-white"
+            }`}
         >
           Bodhuboron
         </a>
@@ -79,15 +77,14 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={(e) => handleLinkClick(e, link.href)}
-              className={`text-sm tracking-widest uppercase transition-colors duration-300 ${
-                isScrolled
+              className={`text-sm tracking-widest uppercase transition-colors duration-300 ${isScrolled
                   ? activeSection === link.href.substring(1)
                     ? "text-black font-semibold"
                     : "text-neutral-400 hover:text-black"
                   : activeSection === link.href.substring(1)
-                  ? "text-white font-semibold"
-                  : "text-white/60 hover:text-white"
-              }`}
+                    ? "text-white font-semibold"
+                    : "text-white/60 hover:text-white"
+                }`}
             >
               {link.name}
             </a>
@@ -96,9 +93,8 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className={`md:hidden p-2 focus:outline-none transition-colors duration-300 ${
-            isScrolled ? "text-[#171717]" : "text-white"
-          }`}
+          className={`md:hidden p-2 focus:outline-none transition-colors duration-300 ${isScrolled ? "text-[#171717]" : "text-white"
+            }`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -116,9 +112,8 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md transition-all duration-300 overflow-hidden shadow-lg border-t border-black/5 ${
-          mobileMenuOpen ? "max-h-[400px]" : "max-h-0 border-t-0"
-        }`}
+        className={`md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md transition-all duration-300 overflow-hidden shadow-lg border-t border-black/5 ${mobileMenuOpen ? "max-h-[400px]" : "max-h-0 border-t-0"
+          }`}
       >
         <div className="flex flex-col items-center py-6 space-y-6">
           {navLinks.map((link) => (
@@ -126,11 +121,10 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={(e) => handleLinkClick(e, link.href)}
-              className={`text-sm tracking-widest uppercase transition-colors ${
-                activeSection === link.href.substring(1)
+              className={`text-sm tracking-widest uppercase transition-colors ${activeSection === link.href.substring(1)
                   ? "text-black font-medium"
                   : "text-neutral-500 hover:text-black"
-              }`}
+                }`}
             >
               {link.name}
             </a>

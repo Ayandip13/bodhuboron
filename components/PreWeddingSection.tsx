@@ -79,7 +79,7 @@ export default function PreWeddingSection() {
 
           {/* Main Card */}
           <div className="max-w-4xl mx-auto">
-            <div 
+            <div
               className="group relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-700"
               onClick={openModal}
             >
@@ -106,9 +106,9 @@ export default function PreWeddingSection() {
                   <p className="text-sm md:text-base text-white/70 font-light max-w-md mb-8 leading-relaxed">
                     {preWeddingPackage.description}
                   </p>
-                  
+
                   {/* Button */}
-                  <button 
+                  <button
                     onClick={(e) => {
                       e.stopPropagation();
                       openModal();
@@ -125,10 +125,10 @@ export default function PreWeddingSection() {
       </section>
 
       {/* Package Modal */}
-      <PackageModal 
-        card={preWeddingPackage} 
-        isOpen={isModalOpen} 
-        onClose={closeModal} 
+      <PackageModal
+        card={preWeddingPackage}
+        isOpen={isModalOpen}
+        onClose={closeModal}
         headerLabel="Pre-Wedding Packages"
       />
     </>

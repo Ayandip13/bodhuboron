@@ -93,8 +93,8 @@ export default function PortfolioSection() {
                 key={category}
                 onClick={() => setActiveFilter(category)}
                 className={`relative px-4 py-2 text-[11px] cursor-pointer tracking-[0.3em] uppercase transition-all duration-500 font-medium ${activeFilter === category
-                    ? "text-neutral-900"
-                    : "text-neutral-400 hover:text-neutral-600"
+                  ? "text-neutral-900"
+                  : "text-neutral-400 hover:text-neutral-600"
                   }`}
               >
                 {category}
@@ -148,14 +148,14 @@ export default function PortfolioSection() {
       {/* Lightbox Modal */}
       {selectedItem && (
         <div
-          className={`fixed inset-0 z-60 bg-black/95 backdrop-blur-2xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0 invisible"
+          className={`fixed inset-0 z-60 mouse-pointer bg-black/95 backdrop-blur-2xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0 invisible"
             }`}
           onClick={closeLightbox}
         >
           {/* Close button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-8 right-8 text-neutral-500 hover:text-white transition-all duration-500 p-2 group z-80"
+            className="absolute mouse-pointer top-8 right-8 text-neutral-500 hover:text-white transition-all duration-500 p-2 group z-80"
           >
             <svg className="w-8 h-8 font-thin transition-transform duration-700 group-hover:rotate-90" fill="none" stroke="currentColor" strokeWidth="0.5" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -176,7 +176,7 @@ export default function PortfolioSection() {
                 priority
               />
             </div>
-            
+
             {/* Info Legend */}
             <div className="mt-12 text-center">
               <p className="text-[9px] tracking-[0.8em] uppercase text-neutral-500 mb-2 font-medium">
