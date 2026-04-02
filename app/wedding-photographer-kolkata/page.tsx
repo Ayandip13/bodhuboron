@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { PackageCards } from "@/components/PackageCards";
+import { weddingPackages } from "@/lib/packageData";
 
 export const metadata: Metadata = {
   title: "Best Wedding Photographer in Kolkata | Bodhuboron",
@@ -119,6 +121,12 @@ export default function WeddingPhotographyPage() {
         </div>
       </section>
 
+      {/* Packages Section */}
+      <PackageCards
+        title="Wedding Photography Packages in Kolkata"
+        packages={weddingPackages}
+      />
+
       {/* CTA Section */}
       <section className="py-24 px-6 md:px-12 bg-neutral-900 text-white text-center">
         <h2 className="text-3xl md:text-5xl font-light tracking-widest uppercase mb-10 leading-tight">Capture Your Special Day</h2>
@@ -133,10 +141,16 @@ export default function WeddingPhotographyPage() {
             👉 Book your wedding photography
           </Link>
           <Link
-            href="/#wedding"
+            href="/"
             className="px-12 rounded-2xl py-5 border border-white/20 text-white text-[12px] tracking-[0.4em] uppercase font-medium hover:bg-white/10 transition-colors"
           >
-            Explore our packages
+            Back to Home
+          </Link>
+          <Link
+            href="/#portfolio"
+            className="px-12 rounded-2xl py-5 border border-white/10 text-white text-[12px] tracking-[0.4em] uppercase font-medium hover:bg-white/10 transition-colors"
+          >
+            View Portfolio
           </Link>
         </div>
       </section>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { PackageCards } from "@/components/PackageCards";
+import { eventPackages } from "@/lib/packageData";
 
 export const metadata: Metadata = {
   title: "Professional Event Photography Kolkata | Bodhuboron",
@@ -119,6 +121,12 @@ export default function EventPhotographyPage() {
         </div>
       </section>
 
+      {/* Packages Section */}
+      <PackageCards
+        title="Event Photography Packages in Kolkata"
+        packages={eventPackages}
+      />
+
       {/* CTA Section */}
       <section className="relative py-28 px-6 md:px-12 bg-neutral-950 text-white overflow-hidden">
         {/* Abstract shapes for design */}
@@ -142,6 +150,12 @@ export default function EventPhotographyPage() {
               className="px-12 rounded-2xl py-5 border border-white/20 text-white text-[12px] tracking-[0.4em] uppercase font-medium hover:bg-white/10 transition-colors"
             >
               Back to Home
+            </Link>
+            <Link
+              href="/#portfolio"
+              className="px-12 rounded-2xl py-5 border border-white/20 text-white text-[12px] tracking-[0.4em] uppercase font-medium hover:bg-white/10 transition-colors"
+            >
+              View Portfolio
             </Link>
           </div>
         </div>
