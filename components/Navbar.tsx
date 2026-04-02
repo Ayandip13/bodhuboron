@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "Wedding", href: "#wedding" },
-  { name: "Events", href: "#events" },
-  { name: "Pre-Wedding", href: "#pre-wedding" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Films", href: "#videos" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/#home" },
+  { name: "Wedding", href: "/#wedding" },
+  { name: "Events", href: "/#events" },
+  { name: "Pre-Wedding", href: "/#pre-wedding" },
+  { name: "Portfolio", href: "/#portfolio" },
+  { name: "Films", href: "/#videos" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -40,17 +40,19 @@ export default function Navbar() {
   }, []);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
     setMobileMenuOpen(false);
 
-    const targetId = href.substring(1);
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      window.history.pushState(null, "", href);
-    } else {
-      window.location.hash = href;
+    // If we are on the homepage, do smooth scroll
+    if (window.location.pathname === "/" || window.location.pathname === "") {
+      const targetId = href.split("#")[1];
+      const element = document.getElementById(targetId);
+      if (element) {
+        e.preventDefault();
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.pushState(null, "", href);
+      }
     }
+    // Otherwise, let the default link behavior take us to the homepage with the hash
   };
 
   return (
@@ -62,8 +64,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a
-          href="#home"
-          onClick={(e) => handleLinkClick(e, "#home")}
+          href="/#home"
+          onClick={(e) => handleLinkClick(e, "/#home")}
           className={`text-xl sm:text-2xl font-semibold tracking-widest uppercase transition-colors duration-300 ${isScrolled ? "text-[#171717]" : "text-white"
             }`}
         >

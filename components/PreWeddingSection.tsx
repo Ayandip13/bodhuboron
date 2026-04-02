@@ -72,9 +72,17 @@ export default function PreWeddingSection() {
               <span className="text-neutral-300 text-[11px]">✦</span>
               <span className="h-px bg-neutral-300 w-10 block" />
             </div>
-            <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed">
+            <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
               Timeless moments before your big day.
             </p>
+            <div className="flex justify-center">
+              <a
+                href="/pre-wedding-shoot-kolkata"
+                className="inline-block mt-4 px-6 py-3 rounded-lg bg-black text-white text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-neutral-800 transition-all duration-300 hover:scale-[1.03]"
+              >
+                Learn More About Pre-Wedding Photography
+              </a>
+            </div>
           </div>
 
           {/* Main Card */}

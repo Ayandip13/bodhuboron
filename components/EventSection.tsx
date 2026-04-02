@@ -194,9 +194,17 @@ export default function EventSection() {
               <span className="text-neutral-600 text-[11px]">✦</span>
               <span className="h-px bg-neutral-700 w-10 block" />
             </div>
-            <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed">
+            <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
               Capturing every special occasion with the same artistry and dedication we bring to weddings.
             </p>
+            <div className="flex justify-center">
+              <a
+                href="/event-photography-kolkata"
+                className="inline-block mt-4 px-6 py-3 rounded-lg bg-white text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-neutral-200 transition-all duration-300 hover:scale-[1.03]"
+              >
+                Learn More About Event Photography
+              </a>
+            </div>
           </div>
 
           {/* Events Grid */}
