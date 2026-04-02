@@ -45,7 +45,7 @@ export default function PreWeddingShootPage() {
           A pre-wedding shoot is more than just photos — it’s about capturing your chemistry, your story, and your journey before the big day.
         </p>
         <p className="text-neutral-500 font-light leading-relaxed text-base">
-          At **Bodhuboron**, we create cinematic pre-wedding shoots in Kolkata that feel natural, romantic, and unforgettable. Let us document the pure magic that exists between the two of you.
+          At Bodhuboron we create cinematic pre-wedding shoots in Kolkata that feel natural, romantic, and unforgettable. Let us document the pure magic that exists between the two of you.
         </p>
       </section>
 
