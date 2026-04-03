@@ -158,7 +158,7 @@ export default function WeddingSection() {
                 <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
                   <Image
                     src={card.image}
-                    alt={card.title}
+                    alt={`${card.title} Photography in Kolkata - Professional Event Coverage by Bodhuboron`}
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 768px) 100vw, 50vw"

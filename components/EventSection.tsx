@@ -219,7 +219,7 @@ export default function EventSection() {
                 <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110">
                   <Image
                     src={event.image}
-                    alt={event.title}
+                    alt={`${event.title} Photography in Kolkata - Professional Event Coverage by Bodhuboron`}
                     fill
                     className={`object-cover ${event.objectPosition ?? "object-center"}`}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
