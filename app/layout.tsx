@@ -13,6 +13,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Bodhuboron",
   description: "Professional Photography Services",
+  verification: {
+    google: "bxErtu_jyHQfjbxjD9pe03GZg4HoDlG5lVJk47kDpPM",
+  }
 };
 
 export default function RootLayout({
