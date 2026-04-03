@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="space-y-8">
-            <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/30 font-medium italic">Navigation</h3>
+            <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/80 font-medium italic">Navigation</h3>
             <ul className="space-y-4">
               {quickLinks.slice(0, 5).map((link) => (
                 <li key={link.name}>
@@ -84,7 +84,7 @@ export default function Footer() {
 
           {/* Expert Services */}
           <div className="space-y-8">
-            <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/30 font-medium italic">Our Expertise</h3>
+            <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/80 font-medium italic">Our Expertise</h3>
             <ul className="space-y-4">
               {services.map((service) => (
                 <li key={service.name}>
@@ -99,12 +99,12 @@ export default function Footer() {
           {/* Connection */}
           <div className="space-y-10">
             <div className="space-y-6">
-              <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/30 font-medium italic">Newsletter</h3>
+              <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/80 font-medium italic">Newsletter</h3>
               <div className="relative group">
                 <input
                   type="email"
                   placeholder="JOURNAL SUBSCRIPTION"
-                  className="bg-white/5 text-white placeholder:text-white/20 px-4 py-4 rounded-xl text-[10px] tracking-[0.2em] w-full border border-white/10 outline-none focus:border-white/30 focus:bg-white/8 transition-all duration-500"
+                  className="bg-white/5 text-white placeholder:text-white/50 px-4 py-4 rounded-xl text-[10px] tracking-[0.2em] w-full border border-white/15 outline-none focus:border-white/30 focus:bg-white/8 transition-all duration-500"
                 />
                 <button className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors" aria-label="Subscribe">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@ export default function Footer() {
 
         {/* Legal & Packages */}
         <div className="pt-12 border-t border-white/5 text-center space-y-8">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] tracking-[0.3em] text-white/20 font-light uppercase">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] tracking-[0.3em] text-white/80 font-light uppercase">
             <span>© 2024 Bodhuboron Photography</span>
             <span className="hidden md:inline">•</span>
             <span>WhatsApp: +91 74496 03865</span>
@@ -134,13 +134,25 @@ export default function Footer() {
             <span>Email: bodhuboron2k22@gmail.com</span>
           </div>
 
-          <div className="py-4 px-8 inline-block rounded-full border border-white/5 bg-white/2 backdrop-blur-sm">
+          <div className="py-4 px-8 inline-block rounded-full border border-white/5 bg-white/10 backdrop-blur-sm">
             <div className="text-[9px] md:text-[11px] font-light tracking-[0.35em] text-white/50 uppercase flex flex-wrap justify-center gap-x-6 gap-y-2">
-              <span className="flex items-center gap-2 font-medium text-white/70">Silver <span className="text-[8px] text-white/20 tracking-normal">₹40,000</span></span>
+              <div className="flex flex-col items-center justify-center">
+                <span className="items-center gap-2 font-medium text-white/70">Silver
+                </span>
+                <span className="text-[8px] text-white/80 tracking-normal">₹40,000</span>
+              </div>
               <span className="text-white/10">|</span>
-              <span className="flex items-center gap-2 font-medium text-white/70">Gold <span className="text-[8px] text-white/20 tracking-normal">₹50,000</span></span>
+              <div className="flex flex-col items-center justify-center">
+                <span className="items-center gap-2 font-medium text-white/70">Gold
+                </span>
+                <span className="text-[8px] text-white/80 tracking-normal">₹50,000</span>
+              </div>
               <span className="text-white/10">|</span>
-              <span className="flex items-center gap-2 font-medium text-white/70">Platinum <span className="text-[8px] text-white/20 tracking-normal">₹65,000</span></span>
+              <div className="flex flex-col items-center justify-center">
+                <span className="items-center gap-2 font-medium text-white/70">Platinum
+                </span>
+                <span className="text-[8px] text-white/80 tracking-normal">₹65,000</span>
+              </div>
             </div>
           </div>
         </div>
