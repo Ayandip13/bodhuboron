@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "10 Best Wedding Photography Locations in Kolkata (2026 Guide) | Bodhuboron",
+  title: "10 Best Wedding Photography Locations in Kolkata (2022 Guide) | Bodhuboron",
   description: "Explore the most stunning and iconic wedding photography locations in Kolkata. From heritage buildings to modern landmarks, finding the perfect backdrop for your big day.",
   keywords: ["wedding photography locations Kolkata", "best photoshoot locations in Kolkata", "Kolkata wedding photoshoot", "heritage wedding locations Kolkata"],
 };
@@ -22,15 +22,15 @@ export default function BestWeddingLocationsKolkata() {
         />
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <div className="mb-6 flex justify-center">
-             <span className="px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-white text-[10px] tracking-[0.2em] uppercase font-medium">Wedding Guide</span>
+            <span className="px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-white text-[10px] tracking-[0.2em] uppercase font-medium">Wedding Guide</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white uppercase mb-6 leading-tight">
             10 Best Wedding Photography Locations in Kolkata
           </h1>
           <div className="text-white/60 text-sm tracking-[0.2em] uppercase flex items-center justify-center gap-4">
-             <span>By Bodhuboron</span>
-             <span className="w-1 h-1 bg-white/40 rounded-full" />
-             <span>April 2026</span>
+            <span>By Bodhuboron</span>
+            <span className="w-1 h-1 bg-white/40 rounded-full" />
+            <span>April 2022</span>
           </div>
         </div>
       </section>
@@ -75,9 +75,9 @@ export default function BestWeddingLocationsKolkata() {
         </p>
 
         <div className="my-20 p-12 bg-neutral-900 text-white rounded-3xl text-center">
-           <h3 className="text-2xl font-light uppercase tracking-[0.2em] mb-6">Ready to Capture Your Story?</h3>
-           <p className="text-white/60 font-light mb-10">Let Bodhuboron help you find the perfect location and capture your most precious moments.</p>
-           <Link href="/#contact" className="inline-block px-10 py-4 bg-white text-black text-[10px] tracking-[0.3em] font-bold uppercase rounded-2xl hover:bg-neutral-200 transition-colors">Book Now</Link>
+          <h3 className="text-2xl font-light uppercase tracking-[0.2em] mb-6">Ready to Capture Your Story?</h3>
+          <p className="text-white/60 font-light mb-10">Let Bodhuboron help you find the perfect location and capture your most precious moments.</p>
+          <Link href="/#contact" className="inline-block px-10 py-4 bg-white text-black text-[10px] tracking-[0.3em] font-bold uppercase rounded-2xl hover:bg-neutral-200 transition-colors">Book Now</Link>
         </div>
 
         <h2 className="text-3xl font-light text-neutral-900 uppercase tracking-widest mb-10 mt-20">Conclusion</h2>
@@ -91,14 +91,14 @@ export default function BestWeddingLocationsKolkata() {
         <div className="max-w-4xl mx-auto">
           <h4 className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-8">Related Guides</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-             <Link href="/blog/how-to-choose-wedding-photographer-kolkata" className="p-8 bg-white rounded-2xl border border-neutral-100 hover:shadow-xl transition-shadow group">
-                <h5 className="text-lg font-medium text-neutral-800 uppercase tracking-wider mb-2 group-hover:text-black">How to Choose the Best Wedding Photographer</h5>
-                <p className="text-neutral-500 text-sm font-light">A comprehensive guide to finding the right photographer for your big day.</p>
-             </Link>
-             <Link href="/blog/pre-wedding-shoot-ideas" className="p-8 bg-white rounded-2xl border border-neutral-100 hover:shadow-xl transition-shadow group">
-                <h5 className="text-lg font-medium text-neutral-800 uppercase tracking-wider mb-2 group-hover:text-black">Pre-Wedding Shoot Ideas</h5>
-                <p className="text-neutral-500 text-sm font-light">Creative themes and ideas for your upcoming pre-wedding session.</p>
-             </Link>
+            <Link href="/blog/how-to-choose-wedding-photographer-kolkata" className="p-8 bg-white rounded-2xl border border-neutral-100 hover:shadow-xl transition-shadow group">
+              <h5 className="text-lg font-medium text-neutral-800 uppercase tracking-wider mb-2 group-hover:text-black">How to Choose the Best Wedding Photographer</h5>
+              <p className="text-neutral-500 text-sm font-light">A comprehensive guide to finding the right photographer for your big day.</p>
+            </Link>
+            <Link href="/blog/pre-wedding-shoot-ideas" className="p-8 bg-white rounded-2xl border border-neutral-100 hover:shadow-xl transition-shadow group">
+              <h5 className="text-lg font-medium text-neutral-800 uppercase tracking-wider mb-2 group-hover:text-black">Pre-Wedding Shoot Ideas</h5>
+              <p className="text-neutral-500 text-sm font-light">Creative themes and ideas for your upcoming pre-wedding session.</p>
+            </Link>
           </div>
         </div>
       </section>

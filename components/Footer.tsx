@@ -10,7 +10,7 @@ export default function Footer() {
             Capturing your special moments
           </p>
         </div>
-        
+
         <div className="flex gap-8">
           <a href="#" className="text-neutral-400 hover:text-black transition-colors duration-300">
             <span className="sr-only">Instagram</span>
@@ -28,9 +28,9 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-        
+
         <div className="text-xs text-neutral-400 tracking-wider">
-          Bodhuboron &copy; 2026. All rights reserved.
+          Bodhuboron &copy; 2022. All rights reserved.
         </div>
       </div>
     </footer>

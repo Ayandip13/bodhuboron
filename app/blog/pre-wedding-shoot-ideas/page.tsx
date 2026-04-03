@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "10 Creative Pre-Wedding Shoot Ideas in Kolkata (2026) | Bodhuboron Blog",
+  title: "10 Creative Pre-Wedding Shoot Ideas in Kolkata (2022) | Bodhuboron Blog",
   description: "Get creative pre-wedding shoot ideas for your upcoming session in Kolkata. From cinematic themes to heritage looks, we help you plan your perfect pre-wedding film.",
   keywords: ["pre wedding shoot ideas", "pre wedding shoot kolkata", "cinematic pre wedding shoot kolkata", "budget pre wedding shoot kolkata", "best pre wedding photoshoot locations in kolkata"],
 };
@@ -27,7 +27,7 @@ export default function PreWeddingShootIdeas() {
           <div className="text-white/60 text-sm tracking-[0.2em] uppercase flex items-center justify-center gap-4">
             <span>By Bodhuboron</span>
             <span className="w-1 h-1 bg-white/40 rounded-full" />
-            <span>April 2026</span>
+            <span>April 2022</span>
           </div>
         </div>
       </section>
