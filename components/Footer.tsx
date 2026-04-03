@@ -1,36 +1,148 @@
 export default function Footer() {
+  const quickLinks = [
+    { name: 'Home', href: '/#home' },
+    { name: 'Special Offers', href: '/#wedding' },
+    { name: 'Photography Packages', href: '/#wedding' },
+    { name: 'Services', href: '/#wedding' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Our Videos', href: '/#videos' },
+    { name: 'Contact', href: '/#contact' },
+  ];
+
+  const services = [
+    { name: 'Wedding Photography', href: '/#wedding' },
+    { name: 'Pre-Wedding Shoot', href: '/#pre-wedding' },
+    { name: 'Birthday Photography', href: '/#events' },
+    { name: 'Event Photography', href: '/#events' },
+  ];
+
+  const socialLinks = [
+    { name: 'Facebook', href: '/', icon: 'M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z' },
+    { name: 'Instagram', href: '/', icon: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.012-3.584.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z' },
+    { name: 'WhatsApp', href: '/', icon: 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z' },
+    { name: 'YouTube', href: '/', icon: 'M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z' },
+  ];
+
   return (
-    <footer className="w-full bg-[#fdfdfd] border-t border-black/5 py-16 px-6 mt-auto">
-      <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center space-y-8">
-        <div>
-          <h2 className="text-2xl font-semibold tracking-widest text-black uppercase mb-3">
-            Bodhuboron
-          </h2>
-          <p className="text-sm text-neutral-500 font-light tracking-wide">
-            Capturing your special moments
-          </p>
+    <footer className="w-full bg-[#0a0a0a] text-white pt-24 pb-12 px-6 md:px-12 mt-auto relative overflow-hidden">
+      {/* Decorative background element */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-white/15 to-transparent" />
+
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
+
+          {/* Brand Identity */}
+          <div className="space-y-8 flex flex-col items-center md:items-start">
+            <div className="group">
+              <a href="/#home" className="inline-block">
+                <h2 className="text-3xl font-light tracking-[0.2em] text-white uppercase mb-2 group-hover:text-white/80 transition-all duration-300">
+                  Bodhuboron
+                </h2>
+                <div className="flex items-center gap-3">
+                  <span className="h-px bg-white/20 w-32 block" />
+                  <span className="text-white/30 text-[10px]">✦</span>
+                  <span className="h-px bg-white/20 w-28 block" />
+                </div>
+              </a>
+            </div>
+
+            <p className="text-xs text-white/40 font-light leading-loose tracking-wide max-w-xs italic">
+              "Crafting timeless visual stories with an eye for raw emotion and elegant detail since 2022."
+            </p>
+
+            <div className="flex gap-5">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/5 hover:border-white/30 transition-all duration-500 transform hover:-translate-y-1"
+                  title={social.name}
+                >
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d={social.icon} />
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="space-y-8">
+            <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/30 font-medium italic">Navigation</h3>
+            <ul className="space-y-4">
+              {quickLinks.slice(0, 5).map((link) => (
+                <li key={link.name}>
+                  <a href={link.href} className="text-xs text-white/50 hover:text-white transition-all duration-300 font-light tracking-widest uppercase hover:translate-x-1 inline-block">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Expert Services */}
+          <div className="space-y-8">
+            <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/30 font-medium italic">Our Expertise</h3>
+            <ul className="space-y-4">
+              {services.map((service) => (
+                <li key={service.name}>
+                  <a href={service.href} className="text-xs text-white/50 hover:text-white transition-all duration-300 font-light tracking-widest uppercase hover:translate-x-1 inline-block">
+                    {service.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Connection */}
+          <div className="space-y-10">
+            <div className="space-y-6">
+              <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/30 font-medium italic">Newsletter</h3>
+              <div className="relative group">
+                <input
+                  type="email"
+                  placeholder="JOURNAL SUBSCRIPTION"
+                  className="bg-white/5 text-white placeholder:text-white/20 px-4 py-4 rounded-xl text-[10px] tracking-[0.2em] w-full border border-white/10 outline-none focus:border-white/30 focus:bg-white/8 transition-all duration-500"
+                />
+                <button className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors" aria-label="Subscribe">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div className="pt-6 border-t border-white/5">
+              <h4 className="text-[10px] tracking-[0.3em] font-medium text-white/40 uppercase mb-4">Contact Studio</h4>
+              <div className="space-y-2">
+                <a href="tel:+916295530167" className="block text-xs text-white/60 hover:text-white transition-colors font-light tracking-widest">+91 62955 30167</a>
+                <a href="tel:+917449603865" className="block text-xs text-white/60 hover:text-white transition-colors font-light tracking-widest">+91 74496 03865</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="flex gap-8">
-          <a href="#" className="text-neutral-400 hover:text-black transition-colors duration-300">
-            <span className="sr-only">Instagram</span>
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-            </svg>
-          </a>
-          <a href="#" className="text-neutral-400 hover:text-black transition-colors duration-300">
-            <span className="sr-only">YouTube</span>
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-              <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.01 29.01 0 001 11.75a29.01 29.01 0 00.46 5.33 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2c.46-1.74.46-5.33.46-5.33s0-3.59-.46-5.33z" />
-              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-            </svg>
-          </a>
-        </div>
+        {/* Legal & Packages */}
+        <div className="pt-12 border-t border-white/5 text-center space-y-8">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] tracking-[0.3em] text-white/20 font-light uppercase">
+            <span>© 2024 Bodhuboron Photography</span>
+            <span className="hidden md:inline">•</span>
+            <span>WhatsApp: +91 74496 03865</span>
+            <span className="hidden md:inline">•</span>
+            <span>Email: bodhuboron2k22@gmail.com</span>
+          </div>
 
-        <div className="text-xs text-neutral-400 tracking-wider">
-          Bodhuboron &copy; 2022. All rights reserved.
+          <div className="py-4 px-8 inline-block rounded-full border border-white/5 bg-white/2 backdrop-blur-sm">
+            <div className="text-[9px] md:text-[11px] font-light tracking-[0.35em] text-white/50 uppercase flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <span className="flex items-center gap-2 font-medium text-white/70">Silver <span className="text-[8px] text-white/20 tracking-normal">₹40,000</span></span>
+              <span className="text-white/10">|</span>
+              <span className="flex items-center gap-2 font-medium text-white/70">Gold <span className="text-[8px] text-white/20 tracking-normal">₹50,000</span></span>
+              <span className="text-white/10">|</span>
+              <span className="flex items-center gap-2 font-medium text-white/70">Platinum <span className="text-[8px] text-white/20 tracking-normal">₹65,000</span></span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
