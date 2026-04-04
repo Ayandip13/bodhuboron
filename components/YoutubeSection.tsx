@@ -22,18 +22,18 @@ export default function YoutubeSection() {
 
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
-          <p className="text-[10px] tracking-[0.45em] uppercase text-neutral-400 mb-4 font-medium">
+          <p className="text-[12px] tracking-[0.45em] uppercase text-neutral-400 mb-4 font-medium">
             Motion Stories
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-widest text-neutral-900 uppercase mb-8">
             Our Films
           </h2>
           <div className="flex items-center gap-4 mb-10">
-            <span className="h-px bg-neutral-200 w-12 block" />
+            <span className="h-px bg-neutral-200 w-40 block" />
             <span className="text-neutral-300 text-[11px]">✦</span>
-            <span className="h-px bg-neutral-200 w-12 block" />
+            <span className="h-px bg-neutral-200 w-40 block" />
           </div>
-          <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed">
+          <p className="text-md text-neutral-500 font-light tracking-wide max-w-md leading-relaxed">
             Experience our storytelling through motion. Cinematic films that bring your memories back to life.
           </p>
         </div>

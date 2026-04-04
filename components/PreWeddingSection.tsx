@@ -61,7 +61,7 @@ export default function PreWeddingSection() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="flex flex-col items-center text-center mb-16">
-            <p className="text-[10px] tracking-[0.45em] uppercase text-neutral-400 mb-4 font-medium">
+            <p className="text-[15px] tracking-[0.45em] uppercase text-neutral-400 mb-4 font-medium">
               Specialized
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-widest text-neutral-900 uppercase mb-5">
@@ -72,7 +72,7 @@ export default function PreWeddingSection() {
               <span className="text-neutral-300 text-[11px]">✦</span>
               <span className="h-px bg-neutral-300 w-10 block" />
             </div>
-            <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
+            <p className="text-md text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
               Timeless moments before your big day.
             </p>
             <div className="flex justify-center">

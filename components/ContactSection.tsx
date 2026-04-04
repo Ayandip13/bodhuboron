@@ -69,9 +69,9 @@ export default function ContactSection() {
             Get in touch and let’s create something beautiful together
           </p>
           <div className="flex items-center justify-center gap-4 mt-8">
-            <span className="h-px bg-neutral-200 w-12 block" />
+            <span className="h-px bg-neutral-200 w-110 block" />
             <span className="text-neutral-300 text-[11px]">✦</span>
-            <span className="h-px bg-neutral-200 w-12 block" />
+            <span className="h-px bg-neutral-200 w-110 block" />
           </div>
         </div>
 

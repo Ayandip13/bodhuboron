@@ -183,7 +183,7 @@ export default function EventSection() {
 
           {/* Section Header */}
           <div className="flex flex-col items-center text-center mb-16">
-            <p className="text-[10px] tracking-[0.45em] uppercase text-neutral-500 mb-4 font-medium">
+            <p className="text-[15px] tracking-[0.45em] uppercase text-neutral-500 mb-4 font-medium">
               What We Cover
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-widest text-white uppercase mb-5">
@@ -194,7 +194,7 @@ export default function EventSection() {
               <span className="text-neutral-600 text-[11px]">✦</span>
               <span className="h-px bg-neutral-700 w-10 block" />
             </div>
-            <p className="text-sm text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
+            <p className="text-md text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
               Capturing every special occasion with the same artistry and dedication we bring to weddings.
             </p>
             <div className="flex justify-center">
