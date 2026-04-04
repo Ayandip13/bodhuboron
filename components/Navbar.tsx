@@ -70,18 +70,18 @@ export default function Navbar() {
         : "bg-transparent py-5 sm:py-6"
         }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
         <Link
           href="/#home"
           onClick={(e) => handleLinkClick(e, "/#home")}
-          className={`text-xl sm:text-2xl font-light tracking-[0.25em] uppercase transition-all duration-300 ${isScrolled ? "text-neutral-900" : "text-white"
+          className={`text-xl sm:text-2xl font-light tracking-[0.25em] uppercase transition-all duration-300 shrink-0 ${isScrolled ? "text-neutral-900" : "text-white"
             }`}
         >
           Bodhuboron
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((link) => {
             const sectionTarget = link.href.split("#")[1];
             const isActive = activeSection === sectionTarget;
@@ -106,9 +106,8 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
-          className={`md:hidden p-2 focus:outline-none transition-colors duration-300 ${isScrolled ? "text-neutral-950" : "text-white"
+          className={`lg:hidden p-2 focus:outline-none transition-colors duration-300 ${isScrolled ? "text-neutral-950" : "text-white"
             }`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
@@ -127,7 +126,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-white transition-all duration-500 overflow-hidden shadow-2xl ${mobileMenuOpen ? "max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"
+        className={`lg:hidden absolute top-full left-0 w-full bg-white transition-all duration-500 overflow-hidden shadow-2xl ${mobileMenuOpen ? "max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"
           }`}
       >
         <div className="flex flex-col items-center py-12 space-y-8 bg-neutral-50/50">
