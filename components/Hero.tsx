@@ -80,9 +80,9 @@ export default function Hero() {
             }`}
           style={{ transitionDelay: "500ms" }}
         >
-          <span className="h-px bg-white/25 w-12 block" />
+          <span className="h-px bg-white/25 w-50 block" />
           <span className="text-white/35 text-[11px]">✦</span>
-          <span className="h-px bg-white/25 w-12 block" />
+          <span className="h-px bg-white/25 w-50 block" />
         </div>
 
         {/* Subtitle */}

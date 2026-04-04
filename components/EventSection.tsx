@@ -190,9 +190,9 @@ export default function EventSection() {
               Event Photography
             </h2>
             <div className="flex items-center gap-4 mb-5">
-              <span className="h-px bg-neutral-700 w-10 block" />
+              <span className="h-px bg-neutral-700 w-80 block" />
               <span className="text-neutral-600 text-[11px]">✦</span>
-              <span className="h-px bg-neutral-700 w-10 block" />
+              <span className="h-px bg-neutral-700 w-80 block" />
             </div>
             <p className="text-md text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
               Capturing every special occasion with the same artistry and dedication we bring to weddings.

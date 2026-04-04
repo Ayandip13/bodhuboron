@@ -68,9 +68,9 @@ export default function PreWeddingSection() {
               Pre-Wedding Shoot
             </h2>
             <div className="flex items-center gap-4 mb-5">
-              <span className="h-px bg-neutral-300 w-10 block" />
+              <span className="h-px bg-neutral-300 w-80 block" />
               <span className="text-neutral-300 text-[11px]">✦</span>
-              <span className="h-px bg-neutral-300 w-10 block" />
+              <span className="h-px bg-neutral-300 w-80 block" />
             </div>
             <p className="text-md text-neutral-500 font-light tracking-wide max-w-md leading-relaxed mb-6">
               Timeless moments before your big day.
