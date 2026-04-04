@@ -151,7 +151,7 @@ export default function PreWeddingShootPage() {
                 { title: "Unique storytelling approach", desc: "We offer <Link href='/blog/pre-wedding-shoot-ideas' className='text-black font-medium underline'>creative pre-wedding ideas</Link> that are tailored specifically to your love story." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-8 border-b border-neutral-100 pb-8 last:border-0 last:pb-0">
-                  <span className="text-4xl font-extralight text-neutral-300 italic">0{i + 1}</span>
+                  <span className="text-4xl font-extralight text-neutral-400 italic">0{i + 1}</span>
                   <div>
                     <h4 className="font-semibold text-neutral-800 uppercase tracking-wide text-sm mb-2" dangerouslySetInnerHTML={{ __html: item.title }} />
                     <p className="text-neutral-500 font-light text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
@@ -166,11 +166,11 @@ export default function PreWeddingShootPage() {
       {/* Internal Linking for SEO */}
       <section className="py-12 px-6 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-8 md:gap-16">
-          <Link href="/wedding-photographer-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Main wedding photography</Link>
+          <Link href="/wedding-photographer-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Main wedding photography</Link>
           <span className="h-4 w-px bg-white/10 hidden md:block" />
-          <Link href="/event-photography-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Event photography Kolkata</Link>
+          <Link href="/event-photography-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Event photography Kolkata</Link>
           <span className="h-4 w-px bg-white/10 hidden md:block" />
-          <Link href="/blog/best-wedding-photography-locations-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Best photoshoot locations</Link>
+          <Link href="/blog/best-wedding-photography-locations-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Best photoshoot locations</Link>
         </div>
       </section>
 
@@ -201,12 +201,12 @@ export default function PreWeddingShootPage() {
           </Link>
           <Link
             href="/#contact"
-             className="px-14 py-6 border border-white/20 rounded-2xl text-white text-[11px] tracking-[0.4em] uppercase font-bold hover:bg-white/10 transition-all"
+            className="px-14 py-6 border border-white/20 rounded-2xl text-white text-[11px] tracking-[0.4em] uppercase font-bold hover:bg-white/10 transition-all"
           >
             Book Now
           </Link>
           <Link
-           href="/"
+            href="/"
             className="px-14 rounded-2xl py-6 border border-white/10 text-white/40 text-[11px] tracking-[0.4em] uppercase font-medium hover:text-white transition-colors"
           >
             Back to Home

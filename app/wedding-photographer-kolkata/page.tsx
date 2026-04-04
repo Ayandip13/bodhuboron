@@ -171,11 +171,11 @@ export default function WeddingPhotographyPage() {
       {/* Internal Linking for SEO */}
       <section className="py-12 px-6 bg-neutral-900">
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-8 md:gap-16">
-          <Link href="/pre-wedding-shoot-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Check pre-wedding packages</Link>
+          <Link href="/pre-wedding-shoot-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Check pre-wedding packages</Link>
           <span className="h-4 w-px bg-white/10 hidden md:block" />
-          <Link href="/event-photography-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Event photography in Kolkata</Link>
+          <Link href="/event-photography-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Event photography in Kolkata</Link>
           <span className="h-4 w-px bg-white/10 hidden md:block" />
-          <Link href="/blog/how-to-choose-wedding-photographer-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Photography Blog</Link>
+          <Link href="/blog/how-to-choose-wedding-photographer-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors">Photography Blog</Link>
         </div>
       </section>
 

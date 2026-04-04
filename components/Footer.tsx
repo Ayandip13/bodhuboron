@@ -99,11 +99,11 @@ export default function Footer() {
           {/* Connection */}
           <div className="space-y-10">
             <div className="space-y-6">
-              <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/80 font-medium italic">Newsletter</h3>
+              <h3 className="text-[11px] tracking-[0.4em] uppercase text-white/80 font-medium italic">Give us rate</h3>
               <div className="relative group">
                 <input
                   type="email"
-                  placeholder="JOURNAL SUBSCRIPTION"
+                  placeholder="Give us rate"
                   className="bg-white/5 text-white placeholder:text-white/50 px-4 py-4 rounded-xl text-[10px] tracking-[0.2em] w-full border border-white/15 outline-none focus:border-white/30 focus:bg-white/8 transition-all duration-500"
                 />
                 <button className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors" aria-label="Subscribe">

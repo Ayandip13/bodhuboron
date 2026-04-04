@@ -138,11 +138,11 @@ export default function EventPhotographyPage() {
       {/* Internal Linking for SEO */}
       <section className="py-12 px-6 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-8 md:gap-16">
-          <Link href="/wedding-photographer-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors hover:text-white">Wedding photography</Link>
+          <Link href="/wedding-photographer-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors hover:text-white">Wedding photography</Link>
           <span className="h-4 w-px bg-white/10 hidden md:block" />
-          <Link href="/pre-wedding-shoot-kolkata" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors hover:text-white">Pre-wedding photography</Link>
+          <Link href="/pre-wedding-shoot-kolkata" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors hover:text-white">Pre-wedding photography</Link>
           <span className="h-4 w-px bg-white/10 hidden md:block" />
-          <Link href="/blog/pre-wedding-shoot-ideas" className="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors hover:text-white">Photography ideas blog</Link>
+          <Link href="/blog/pre-wedding-shoot-ideas" className="text-white/50 hover:text-white text-xs tracking-[0.2em] uppercase font-medium transition-colors hover:text-white">Photography ideas blog</Link>
         </div>
       </section>
 
