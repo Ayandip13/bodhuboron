@@ -158,9 +158,24 @@ export default function ContactSection() {
                 </a>
 
                 {/* Location */}
-                <div className="group flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 shadow-sm hover:shadow-md hover:border-neutral-200 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-neutral-50 flex items-center justify-center text-neutral-400 group-hover:bg-black group-hover:text-white transition-colors duration-300">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <a
+                  href="https://maps.app.goo.gl/xghn54RVHPhTUs9M9?g_st=ic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 shadow-sm hover:shadow-md hover:border-neutral-200 transition-all duration-300"
+                >
+                  <div
+                    className="w-10 h-10 rounded-full bg-neutral-50 flex items-center justify-center text-neutral-400
+                    transition-all duration-300
+                    group-hover:bg-[linear-gradient(135deg,#4285f4,#34a853,#fbbc05,#ea4335)]"
+                  >
+                    <svg
+                      className="w-4 h-4 group-hover:text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
                       <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
@@ -169,11 +184,11 @@ export default function ContactSection() {
                     <p className="text-[10px] tracking-widest uppercase text-neutral-400 font-medium">
                       Location
                     </p>
-                    <p className="text-sm text-neutral-800 font-medium">
+                    <p className="text-sm text-neutral-800 font-medium group-hover:underline">
                       Based in Kolkata, serving all West Bengal
                     </p>
                   </div>
-                </div>
+                </a>
 
                 {/* Hours */}
                 <div className="group flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 shadow-sm hover:shadow-md hover:border-neutral-200 transition-all duration-300">
