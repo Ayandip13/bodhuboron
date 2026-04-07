@@ -205,7 +205,7 @@ export default function ContactSection() {
               <div className="flex flex-wrap gap-4">
                 {/* Facebook */}
                 <a
-                  href="https://facebook.com/bodhuboron"
+                  href="https://www.facebook.com/share/1BLQ6GUPhB/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white border border-neutral-100 flex items-center justify-center text-neutral-400 hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] hover:shadow-lg hover:shadow-[#1877F2]/20 transition-all duration-300"
@@ -218,7 +218,7 @@ export default function ContactSection() {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/bodhuboron_2k22"
+                  href="https://www.instagram.com/bodhuboron_2k22?igsh=YjA2MW9ibnRhMjZ1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white border border-neutral-100 flex items-center justify-center text-neutral-400 
@@ -247,7 +247,7 @@ export default function ContactSection() {
 
                 {/* YouTube */}
                 <a
-                  href="https://youtube.com/@bodhuboron"
+                  href="https://youtube.com/@bodhuboron-2021?si=VMff1qZ2EAwE-ak4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white border border-neutral-100 flex items-center justify-center text-neutral-400 hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] hover:shadow-lg hover:shadow-[#FF0000]/20 transition-all duration-300"
