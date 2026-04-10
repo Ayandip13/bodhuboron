@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   const quickLinks = [
     { name: 'Home', href: '/#home' },
@@ -35,9 +37,14 @@ export default function Footer() {
           <div className="space-y-8 flex flex-col items-center md:items-start">
             <div className="group">
               <a href="/#home" className="inline-block">
-                <h2 className="text-3xl font-light tracking-[0.2em] text-white uppercase mb-2 group-hover:text-white/80 transition-all duration-300">
-                  Bodhuboron
-                </h2>
+                <div className="relative h-12 w-48 mb-4">
+                  <Image
+                    src="/bodhuboron white png.png"
+                    alt="Bodhuboron Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <div className="flex items-center gap-3">
                   <span className="h-px bg-white/20 w-32 block" />
                   <span className="text-white/30 text-[10px]">✦</span>

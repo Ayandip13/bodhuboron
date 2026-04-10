@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+import Image from "next/image";
+
 const navLinks = [
   { name: "Home", href: "/#home" },
   { name: "Wedding", href: "/#wedding" },
@@ -66,7 +68,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
-        ? "bg-white/95 backdrop-blur-md shadow-sm py-3 sm:py-4 border-b border-neutral-100"
+        ? "bg-white/95 backdrop-blur-md shadow-sm py-2 sm:py-3 border-b border-neutral-100"
         : "bg-transparent py-5 sm:py-6"
         }`}
     >
@@ -74,10 +76,16 @@ export default function Navbar() {
         <Link
           href="/#home"
           onClick={(e) => handleLinkClick(e, "/#home")}
-          className={`text-xl sm:text-2xl font-light tracking-[0.25em] uppercase transition-all duration-300 shrink-0 ${isScrolled ? "text-neutral-900" : "text-white"
-            }`}
+          className="relative h-10 w-40 sm:h-12 sm:w-48 transition-all duration-300 shrink-0"
         >
-          Bodhuboron
+          <Image
+            src="/bodhuboron white png.png"
+            alt="Bodhuboron Logo"
+            fill
+            className={`object-contain transition-all duration-500 ${isScrolled ? "invert brightness-0" : ""
+              }`}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
