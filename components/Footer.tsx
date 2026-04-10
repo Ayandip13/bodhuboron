@@ -37,13 +37,23 @@ export default function Footer() {
           <div className="space-y-8 flex flex-col items-center md:items-start">
             <div className="group">
               <a href="/#home" className="inline-block">
-                <div className="relative h-12 w-48 mb-4">
-                  <Image
-                    src="/bodhuboron white png.png"
-                    alt="Bodhuboron Logo"
-                    fill
-                    className="object-contain"
-                  />
+                <div className="flex flex-col md:items-start gap-4 mb-8">
+                  <div className="relative h-24 w-24 md:h-28 md:w-28 transition-all duration-500 mx-auto">
+                    <Image
+                      src="/bodhuboron white png.png"
+                      alt="Bodhuboron Logo"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex flex-col md:items-start text-center md:text-left">
+                    <span className="text-xl md:text-2xl font-bold tracking-[0.4em] uppercase text-white leading-tight">
+                      Bodhuboron
+                    </span>
+                    <span className="text-[9px] md:text-[10px] tracking-[0.6em] uppercase text-white/40 mt-1 mx-auto">
+                      Photography
+                    </span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="h-px bg-white/20 w-32 block" />

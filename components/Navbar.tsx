@@ -76,16 +76,32 @@ export default function Navbar() {
         <Link
           href="/#home"
           onClick={(e) => handleLinkClick(e, "/#home")}
-          className="relative h-10 w-40 sm:h-12 sm:w-48 transition-all duration-300 shrink-0"
+          className="flex items-center gap-3 transition-all duration-300 group"
         >
-          <Image
-            src="/bodhuboron white png.png"
-            alt="Bodhuboron Logo"
-            fill
-            className={`object-contain transition-all duration-500 ${isScrolled ? "invert brightness-0" : ""
-              }`}
-            priority
-          />
+          <div className={`relative h-8 w-8 sm:h-10 sm:w-10 transition-all duration-500 ${isScrolled ? "brightness-0" : ""
+            }`}>
+            <Image
+              src="/bodhuboron white png.png"
+              alt="Bodhuboron Logo Symbol"
+              fill
+              className="object-contain scale-140"
+              priority
+            />
+          </div>
+          <div className="flex flex-col">
+            <span
+              className={`text-sm sm:text-base font-bold tracking-[0.3em] uppercase transition-all duration-500 ${isScrolled ? "text-neutral-900" : "text-white"
+                }`}
+            >
+              Bodhuboron
+            </span>
+            {/* <span
+              className={`text-[7px] sm:text-[8px] tracking-[0.5em] uppercase transition-all duration-500 opacity-50 ${isScrolled ? "text-neutral-900" : "text-white"
+                }`}
+            >
+              Photography
+            </span> */}
+          </div>
         </Link>
 
         {/* Desktop Nav */}
