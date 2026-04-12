@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { PackageCards } from "@/components/PackageCards";
 import { weddingPackages } from "@/lib/packageData";
 import { FAQ } from "@/components/FAQ";
+import { ExpandableGallery } from "@/components/ExpandableGallery";
 
 export const metadata: Metadata = {
   title: "Best Wedding Photographer in Kolkata | Candid & Cinematic | Bodhuboron",
@@ -131,6 +132,19 @@ export default function WeddingPhotographyPage() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Preview */}
+      <ExpandableGallery 
+        title="Explore Our Wedding Work"
+        images={[
+          { src: "/wedding-both.png", alt: "Candid wedding photography in Kolkata bride and groom moment" },
+          { src: "/portfolio-1.jpg", alt: "Cinematic wedding photography in Kolkata rituals" },
+          { src: "/portfolio-2.jpg", alt: "Artistic wedding session in Kolkata" },
+          { src: "/wedding-single.png", alt: "Professional wedding photographer in Kolkata capturing bride" },
+          { src: "/event-engagement.png", alt: "Engagement ceremony photography in Kolkata" },
+          { src: "/hero-bg.png", alt: "Luxury wedding photography in Kolkata" }
+        ]}
+      />
 
       {/* Why Choose Us */}
       <section className="py-24 px-6 md:px-12 max-w-6xl mx-auto">

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { PackageCards } from "@/components/PackageCards";
 import { eventPackages } from "@/lib/packageData";
 import { FAQ } from "@/components/FAQ";
+import { ExpandableGallery } from "@/components/ExpandableGallery";
 
 export const metadata: Metadata = {
   title: "Professional Event Photographer in Kolkata | Parties & Corporate | Bodhuboron",
@@ -134,6 +135,19 @@ export default function EventPhotographyPage() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Preview */}
+      <ExpandableGallery 
+        title="View Our Event Portfolio"
+        images={[
+          { src: "/event-birthday.png", alt: "Birthday party photography in Kolkata" },
+          { src: "/event-rice.png", alt: "Rice ceremony photography in Kolkata Annaprashan" },
+          { src: "/event-anniversary.png", alt: "Anniversary celebration photography in Kolkata" },
+          { src: "/event-live.png", alt: "Corporate event photography in Kolkata live show" },
+          { src: "/event-babyshower.png", alt: "Baby shower event photography in Kolkata" },
+          { src: "/event-engagement.png", alt: "Engagement event photography in Kolkata" }
+        ]}
+      />
 
       {/* Internal Linking for SEO */}
       <section className="py-12 px-6 bg-[#0a0a0a]">

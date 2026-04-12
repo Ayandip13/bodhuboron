@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { PackageCards } from "@/components/PackageCards";
 import { preWeddingPackages } from "@/lib/packageData";
 import { FAQ } from "@/components/FAQ";
+import { ExpandableGallery } from "@/components/ExpandableGallery";
 
 export const metadata: Metadata = {
   title: "Best Pre-Wedding Shoot in Kolkata | Cinematic & Romantic | Bodhuboron",
@@ -129,6 +130,19 @@ export default function PreWeddingShootPage() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Preview */}
+      <ExpandableGallery 
+        title="View Our Sample Pre-Wedding Shots"
+        images={[
+          { src: "/prewedding.jpg", alt: "Romantic pre-wedding shoot in Kolkata at sunset" },
+          { src: "/portfolio-3.jpg", alt: "Cinematic pre-wedding photoshoot in Kolkata" },
+          { src: "/wedding-both.png", alt: "Couple outdoor pre-wedding session in Kolkata" },
+          { src: "/portfolio-1.jpg", alt: "Artistic couple shoot in heritage location" },
+          { src: "/portfolio-2.jpg", alt: "Pre-wedding chemistry capture in Kolkata" },
+          { src: "/hero-bg.png", alt: "Cinematic romantic pre-wedding session" }
+        ]}
+      />
 
       {/* Why Choose Us */}
       <section className="py-24 px-6 md:px-12 max-w-6xl mx-auto">
