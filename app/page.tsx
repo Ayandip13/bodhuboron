@@ -2,11 +2,19 @@ import Hero from "@/components/Hero";
 import WeddingSection from "@/components/WeddingSection";
 import EventSection from "@/components/EventSection";
 import PreWeddingSection from "@/components/PreWeddingSection";
-import PortfolioSection from "@/components/PortfolioSection";
-import YoutubeSection from "@/components/YoutubeSection";
 import ContactSection from "@/components/ContactSection";
 import type { Metadata } from "next";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const PortfolioSection = dynamic(() => import("@/components/PortfolioSection"), {
+  loading: () => <div className="h-96 flex items-center justify-center">Loading Gallery...</div>,
+  ssr: false,
+});
+
+const YoutubeSection = dynamic(() => import("@/components/YoutubeSection"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   title: "Bodhuboron | Best Wedding & Event Photographer in Kolkata",

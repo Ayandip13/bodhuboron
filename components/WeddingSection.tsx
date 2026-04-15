@@ -162,6 +162,7 @@ export default function WeddingSection() {
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={65}
                   />
                 </div>
 
@@ -170,7 +171,7 @@ export default function WeddingSection() {
 
                 {/* Badge */}
                 <div className="absolute top-5 left-5 z-10">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-[9px] tracking-[0.3em] uppercase font-medium text-white/80 bg-white/10 backdrop-blur-sm border border-white/15">
+                  <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[10px] tracking-[0.35em] uppercase font-medium text-white bg-white/20 border border-white/20">
                     {card.badge}
                   </span>
                 </div>

@@ -68,7 +68,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
-        ? "bg-white/95 backdrop-blur-md shadow-sm py-2 sm:py-3 border-b border-neutral-100"
+        ? "bg-white/98 shadow-sm py-2 sm:py-3 border-b border-neutral-100"
         : "bg-transparent py-5 sm:py-6"
         }`}
     >
@@ -86,6 +86,7 @@ export default function Navbar() {
               fill
               className="object-contain scale-140"
               priority
+              quality={50}
             />
           </div>
           <div className="flex flex-col">

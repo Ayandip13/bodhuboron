@@ -223,6 +223,7 @@ export default function EventSection() {
                     fill
                     className={`object-cover ${event.objectPosition ?? "object-center"}`}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    quality={65}
                   />
                 </div>
 
@@ -234,7 +235,7 @@ export default function EventSection() {
 
                 {/* "Explore" hover indicator — fades in */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[10px] tracking-[0.35em] uppercase font-medium text-white bg-white/10 backdrop-blur-sm border border-white/20">
+                  <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[10px] tracking-[0.35em] uppercase font-medium text-white bg-white/20 border border-white/20">
                     Explore
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />

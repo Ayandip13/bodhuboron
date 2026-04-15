@@ -65,7 +65,7 @@ export function PackageModal({
       {/* Backdrop */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 z-60 bg-black/10 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-60 bg-black/60 transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         aria-hidden="true"
       />

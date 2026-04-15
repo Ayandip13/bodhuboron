@@ -99,6 +99,7 @@ export default function PreWeddingSection() {
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 1024px"
+                  quality={65}
                 />
               </div>
 

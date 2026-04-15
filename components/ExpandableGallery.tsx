@@ -79,6 +79,7 @@ export function ExpandableGallery({ images, title = "Explore Our Work" }: Expand
                     className="object-cover hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={60}
                   />
                 )}
               </div>

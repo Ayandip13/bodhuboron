@@ -38,6 +38,7 @@ export default function Hero() {
           priority
           className="object-cover object-center"
           sizes="100vw"
+          quality={70}
         />
       </div>
 
@@ -50,8 +51,8 @@ export default function Hero() {
         className={`relative z-20 flex flex-col items-center justify-center px-6 sm:px-10 py-14 text-center max-w-3xl mx-auto transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
       >
-        {/* Glassmorphism depth layer */}
-        <div className="mt-5 absolute inset-4 sm:inset-0 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-2xl pointer-events-none" />
+        {/* Glassmorphism depth layer - reduced blur for performance */}
+        <div className="mt-5 absolute inset-4 sm:inset-0 rounded-3xl bg-white/5 backdrop-blur-[2px] border border-white/10 shadow-2xl pointer-events-none" />
 
         {/* Eyebrow label */}
         <p

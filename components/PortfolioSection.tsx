@@ -124,6 +124,7 @@ export default function PortfolioSection() {
                     fill
                     className="object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    quality={65}
                   />
 
                   {/* Subtle Gradient Overlay */}
@@ -148,7 +149,7 @@ export default function PortfolioSection() {
       {/* Lightbox Modal */}
       {selectedItem && (
         <div
-          className={`fixed inset-0 z-60 mouse-pointer bg-black/95 backdrop-blur-2xl flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0 invisible"
+          className={`fixed inset-0 z-60 mouse-pointer bg-black/98 flex items-center justify-center p-4 sm:p-12 transition-all duration-500 ${selectedItem ? "opacity-100" : "opacity-0 invisible"
             }`}
           onClick={closeLightbox}
         >
@@ -173,7 +174,7 @@ export default function PortfolioSection() {
                 alt={selectedItem.alt}
                 fill
                 className="object-contain"
-                priority
+                quality={70}
               />
             </div>
 
