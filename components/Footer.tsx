@@ -151,28 +151,6 @@ export default function Footer() {
             <span className="hidden md:inline">•</span>
             <span>Email: bodhuboron2k22@gmail.com</span>
           </div>
-
-          <div className="py-4 px-8 inline-block rounded-full border border-white/5 bg-white/15">
-            <div className="text-[9px] md:text-[11px] font-light tracking-[0.35em] text-white/50 uppercase flex flex-wrap justify-center gap-x-6 gap-y-2">
-              <div className="flex flex-col items-center justify-center">
-                <span className="items-center gap-2 font-medium text-white/70">Silver
-                </span>
-                <span className="text-[8px] text-white/80 tracking-normal">₹40,000</span>
-              </div>
-              <span className="text-white/10">|</span>
-              <div className="flex flex-col items-center justify-center">
-                <span className="items-center gap-2 font-medium text-white/70">Gold
-                </span>
-                <span className="text-[8px] text-white/80 tracking-normal">₹50,000</span>
-              </div>
-              <span className="text-white/10">|</span>
-              <div className="flex flex-col items-center justify-center">
-                <span className="items-center gap-2 font-medium text-white/70">Platinum
-                </span>
-                <span className="text-[8px] text-white/80 tracking-normal">₹65,000</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
