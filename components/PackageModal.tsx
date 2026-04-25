@@ -108,7 +108,8 @@ export function PackageModal({
           {/* Scrollable Packages */}
           <div className="overflow-y-auto max-h-[65vh] px-7 py-6 space-y-4 scrollbar-thin scrollbar-thumb-neutral-600 scrollbar-track-neutral-800">
             {card.packages.map((pkg) => {
-              const style = packageStyles[pkg.name] || packageStyles.Silver;
+              const tierName = pkg.name.split(" ")[0];
+              const style = packageStyles[tierName] || packageStyles.Silver;
               return (
                 <div
                   key={pkg.name}
