@@ -30,11 +30,11 @@ export const PackageCards: React.FC<PackageCardsProps> = ({ title, packages }) =
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className={`relative flex flex-col p-8 md:p-10 rounded-3xl border transition-all duration-500 hover:-translate-y-2 ${
+              className={`relative flex flex-col p-8 md:p-10 rounded-3xl border transition-all duration-500 hover:-translate-y-2 w-full md:max-w-sm ${
                 pkg.isPopular
                   ? "border-neutral-900 shadow-2xl shadow-neutral-200 bg-neutral-50 scale-105 z-10"
                   : "border-neutral-100 shadow-xl shadow-neutral-100 bg-white hover:border-neutral-200"

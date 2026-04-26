@@ -47,40 +47,14 @@ export const weddingPackages: PackageTier[] = [
 
 export const preWeddingPackages: PackageTier[] = [
   {
-    name: "Silver",
-    description: "Romantic and natural storytelling for a short, intimate session.",
-    features: [
-      "3 hours of sunrise or sunset shoot",
-      "1 lead location",
-      "20 high-end edited digital photos",
-      "Natural candid storytelling style",
-      "Outfit consultation Included",
-      "Online delivery within 1 week",
-    ],
-  },
-  {
-    name: "Gold",
-    description: "Comprehensive pre-wedding experience with multiple locations and cinematic video.",
+    name: "Popular (15k)",
+    description: "Full Pre wedding coverage with cinematic films and drone shots.",
     isPopular: true,
     features: [
-      "6 hours of professional coverage",
-      "2-3 curated locations across Kolkata",
-      "50+ professionally edited photos",
-      "Cinematic pre-wedding film (3 mins)",
-      "Styling & theme planning",
-      "Premium canvas print (12x18)",
-    ],
-  },
-  {
-    name: "Platinum",
-    description: "Ultimate storytelling session with sunrise to sunset coverage and drone views.",
-    features: [
-      "Full-day sunrise to sunset session",
-      "Unlimited location changes",
-      "100+ professionally edited photos",
-      "Luxury cinematic story film (5 mins)",
-      "Professional hair & makeup coordination",
-      "Drone cinematography included",
+      "Full Pre wedding Coverup photo with video",
+      "Drone coverup included",
+      "2 reels included",
+      "1 trailer video (2 - 3 minute)",
     ],
   },
 ];
