@@ -14,6 +14,10 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Bodhuboron",
   description: "Professional Photography Services",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   verification: {
     google: "bxErtu_jyHQfjbxjD9pe03GZg4HoDlG5lVJk47kDpPM",
   }
