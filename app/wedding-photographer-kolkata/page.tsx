@@ -136,13 +136,17 @@ export default function WeddingPhotographyPage() {
       {/* Portfolio Preview */}
       <ExpandableGallery 
         title="Explore Our Wedding Work"
+        gridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto"
+        imageContainerClassName="aspect-square w-full"
         images={[
-          { src: "/wedding-both.png", alt: "Candid wedding photography in Kolkata bride and groom moment" },
-          { src: "/portfolio-1.jpg", alt: "Cinematic wedding photography in Kolkata rituals" },
-          { src: "/portfolio-2.jpg", alt: "Artistic wedding session in Kolkata" },
-          { src: "/wedding-single.png", alt: "Professional wedding photographer in Kolkata capturing bride" },
-          { src: "/event-engagement.png", alt: "Engagement ceremony photography in Kolkata" },
-          { src: "/hero-bg.png", alt: "Luxury wedding photography in Kolkata" }
+          { src: "/wedding-portfolio/sample-8.jpg", alt: "Candid wedding photography in Kolkata capturing bride" },
+          { src: "/wedding-portfolio/sample-1.jpg", alt: "Candid wedding photography in Kolkata beautiful bride portrait" },
+          { src: "/wedding-portfolio/sample-2.jpg", alt: "Cinematic wedding photography in Kolkata stunning rituals" },
+          { src: "/wedding-portfolio/sample-3.jpg", alt: "Artistic wedding session in Kolkata couple portrait" },
+          { src: "/wedding-portfolio/sample-4.jpg", alt: "Professional wedding photographer in Kolkata capturing couple" },
+          { src: "/wedding-portfolio/sample-5.jpg", alt: "Engagement ceremony photography in Kolkata special moment" },
+          { src: "/wedding-portfolio/sample-6.jpg", alt: "Luxury wedding photography in Kolkata elegant bride" },
+          { src: "/wedding-portfolio/sample-7.jpg", alt: "Bengali wedding traditional moments in Kolkata" }
         ]}
       />
 

@@ -12,9 +12,16 @@ interface PortfolioImage {
 interface ExpandableGalleryProps {
   images: PortfolioImage[];
   title?: string;
+  gridClassName?: string;
+  imageContainerClassName?: string;
 }
 
-export function ExpandableGallery({ images, title = "Explore Our Work" }: ExpandableGalleryProps) {
+export function ExpandableGallery({
+  images,
+  title = "Explore Our Work",
+  gridClassName = "grid-cols-1 md:grid-cols-3 gap-6",
+  imageContainerClassName = "aspect-[4/5]"
+}: ExpandableGalleryProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -63,11 +70,11 @@ export function ExpandableGallery({ images, title = "Explore Our Work" }: Expand
           className={`w-full overflow-hidden transition-all duration-700 ease-in-out ${isExpanded ? "max-h-[2000px] opacity-100 mt-12" : "max-h-0 opacity-0"
             }`}
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className={`grid ${gridClassName} mb-12`}>
             {images.map((img, index) => (
               <div
                 key={index}
-                className={`relative aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100 transition-all duration-1000 transform ${isExpanded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                className={`relative ${imageContainerClassName} overflow-hidden rounded-2xl bg-neutral-100 transition-all duration-1000 transform ${isExpanded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                   }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
@@ -76,10 +83,10 @@ export function ExpandableGallery({ images, title = "Explore Our Work" }: Expand
                     src={img.src}
                     alt={img.alt}
                     fill
-                    className="object-cover hover:scale-105 transition-transform duration-700"
+                    className="object-contain hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={60}
+                    quality={90}
                   />
                 )}
               </div>

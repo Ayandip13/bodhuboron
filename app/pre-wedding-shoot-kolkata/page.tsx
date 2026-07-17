@@ -134,13 +134,15 @@ export default function PreWeddingShootPage() {
       {/* Portfolio Preview */}
       <ExpandableGallery 
         title="View Our Sample Pre-Wedding Shots"
+        gridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto"
+        imageContainerClassName="aspect-square w-full"
         images={[
-          { src: "/prewedding.jpg", alt: "Romantic pre-wedding shoot in Kolkata at sunset" },
-          { src: "/portfolio-3.jpg", alt: "Cinematic pre-wedding photoshoot in Kolkata" },
-          { src: "/wedding-both.png", alt: "Couple outdoor pre-wedding session in Kolkata" },
-          { src: "/portfolio-1.jpg", alt: "Artistic couple shoot in heritage location" },
-          { src: "/portfolio-2.jpg", alt: "Pre-wedding chemistry capture in Kolkata" },
-          { src: "/hero-bg.png", alt: "Cinematic romantic pre-wedding session" }
+          { src: "/pre-wedding-portfolio/prewedding-1.jpg", alt: "Romantic pre-wedding shoot in Kolkata at sunset" },
+          { src: "/pre-wedding-portfolio/prewedding-2.jpg", alt: "Cinematic pre-wedding photoshoot in Kolkata" },
+          { src: "/pre-wedding-portfolio/prewedding-3.jpg", alt: "Couple outdoor pre-wedding session in Kolkata" },
+          { src: "/pre-wedding-portfolio/prewedding-4.jpg", alt: "Artistic couple shoot in heritage location" },
+          { src: "/pre-wedding-portfolio/prewedding-5.jpg", alt: "Pre-wedding chemistry capture in Kolkata" },
+          { src: "/pre-wedding-portfolio/prewedding-6.jpg", alt: "Cinematic romantic pre-wedding session" }
         ]}
       />
 

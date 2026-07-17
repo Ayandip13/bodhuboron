@@ -139,13 +139,16 @@ export default function EventPhotographyPage() {
       {/* Portfolio Preview */}
       <ExpandableGallery 
         title="View Our Event Portfolio"
+        gridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto"
+        imageContainerClassName="aspect-square w-full"
         images={[
-          { src: "/event-birthday.png", alt: "Birthday party photography in Kolkata" },
-          { src: "/event-rice.png", alt: "Rice ceremony photography in Kolkata Annaprashan" },
-          { src: "/event-anniversary.png", alt: "Anniversary celebration photography in Kolkata" },
-          { src: "/event-live.png", alt: "Corporate event photography in Kolkata live show" },
-          { src: "/event-babyshower.png", alt: "Baby shower event photography in Kolkata" },
-          { src: "/event-engagement.png", alt: "Engagement event photography in Kolkata" }
+          { src: "/event-portfolio/event-1.jpg", alt: "Birthday party photography in Kolkata" },
+          { src: "/event-portfolio/event-2.jpg", alt: "Rice ceremony photography in Kolkata Annaprashan" },
+          { src: "/event-portfolio/event-3.jpg", alt: "Anniversary celebration photography in Kolkata" },
+          { src: "/event-portfolio/event-4.jpg", alt: "Corporate event photography in Kolkata live show" },
+          { src: "/event-portfolio/event-5.jpg", alt: "Baby shower event photography in Kolkata" },
+          { src: "/event-portfolio/event-6.jpg", alt: "Engagement event photography in Kolkata" },
+          { src: "/event-portfolio/event-7.jpg", alt: "Professional event photography in Kolkata" }
         ]}
       />
 
