@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react";
 
 const youtubeVideos = [
-  { id: "YqdAEdkHrwo", title: "Cinematic Wedding Highlight" },
-  { id: "Q0-ojAcZfnU", title: "Pre-Wedding Dreamscape" },
-  { id: "Mzw2ttJD2qQ", title: "Traditional Ceremony Film" },
-  { id: "Tt5F0DQoWJA", title: "Luxury Event Coverage" },
+  { id: "2cxqsb4UJD4", title: "Cinematic Wedding Highlight" },
+  { id: "n11i1EzpzOg", title: "Pre-Wedding Dreamscape" },
+  { id: "KDS0BBoApGA", title: "Traditional Ceremony Film" },
+  { id: "UA3JfJC_CkA", title: "Luxury Event Coverage" },
 ];
-// https://youtu.be/?si=_oPcxE7OoeDvA6YU
 export default function YoutubeSection() {
   const [isVisible, setIsVisible] = useState(false);
 

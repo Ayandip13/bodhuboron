@@ -22,35 +22,34 @@ export default function ContactSection() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Format the message for WhatsApp
-    // const whatsappNumber = "916295530167";
-    // const messageLines = [
-    //   "*New Inquiry from Bodhuboron Website*",
-    //   "",
-    //   `*Name:* ${formData.name}`,
-    //   `*Phone:* ${formData.phone}`,
-    //   `*Event Type:* ${formData.eventType}`,
-    //   `*Message:* ${formData.message}`,
-    // ];
-    // const fullMessage = messageLines.join("\n");
-    // const encodedMessage = encodeURIComponent(fullMessage);
-    // const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    try {
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // // Redirect to WhatsApp
-    // window.open(whatsappUrl, "_blank");
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", phone: "", eventType: "Wedding", message: "" });
 
-    setTimeout(() => {
+        // Reset success message after 5 seconds
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert("Failed to send inquiry. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending inquiry:", error);
+      alert("An error occurred. Please try again.");
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: "", phone: "", eventType: "Wedding", message: "" });
-
-      // Reset success message after 5 seconds
-      setTimeout(() => setSubmitted(false), 5000);
-    }, 1000);
+    }
   };
 
   return (
