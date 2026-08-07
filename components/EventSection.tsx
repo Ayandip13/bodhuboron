@@ -19,19 +19,16 @@ const events: EventItem[] = [
     objectPosition: "object-center",
     packages: [
       {
-        name: "Silver",
-        icon: "◈",
-        features: ["3 hours coverage", "1 Photographer", "50 Edited photos", "Online Gallery"],
-      },
-      {
-        name: "Gold",
-        icon: "◆",
-        features: ["5 hours coverage", "1 Photographer + 1 Assistant", "100 Edited photos", "Highlight Video (1 min)"],
-      },
-      {
-        name: "Platinum",
+        name: "Birthday Package (15k)",
         icon: "✦",
-        features: ["8 hours coverage", "2 Photographers", "200 Edited photos", "Cinematic Film (3 mins)", "Premium Photo Album"],
+        features: [
+          "Photo + Video one day coverup",
+          "PhotoBook Album for 20 sheets",
+          "Cinematic Video 20-25 min",
+          "Trailer (2-3 min)",
+          "Reels for Instagram 2 Pic",
+          "20 Edit photos for social media photos"
+        ],
       },
     ],
   },
@@ -144,19 +141,26 @@ const events: EventItem[] = [
     objectPosition: "object-center",
     packages: [
       {
-        name: "Silver",
+        name: "Basic (8-10k)",
         icon: "◈",
-        features: ["4 hours coverage", "1 Lead Photographer", "100 Action shots", "Next-day delivery"],
+        features: [
+          "2 to 3 hours coverage",
+          "One Photographer",
+          "50-100 basic edit digital images",
+          "Online secure gallery delivery within 3-4 days"
+        ],
       },
       {
-        name: "Gold",
+        name: "Standard (15k)",
         icon: "◆",
-        features: ["8 hours coverage", "2 Photographers", "250 Action shots", "Social media highlight edits"],
-      },
-      {
-        name: "Platinum",
-        icon: "✦",
-        features: ["Full day/Festival coverage", "3 Photographers", "Unlimited action shots", "Pro video highlights", "Live feed photography snippets"],
+        features: [
+          "4-6 hours continuous coverage",
+          "One Photographer with one videographer with assistant",
+          "100-150 high-quality edited photos",
+          "Online secure gallery delivery within 2 days",
+          "One video for total event",
+          "2 Reels for social media"
+        ],
       },
     ],
   },
