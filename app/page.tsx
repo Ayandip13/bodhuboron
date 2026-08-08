@@ -104,7 +104,7 @@ export default function Home() {
 
       {/* SEO Text Block */}
       <section className="py-24 px-6 md:px-12 bg-neutral-950 text-white font-montserrat rounded-[4rem] mx-4 mb-20 overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/1.5 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl pointer-events-none" />
+        <div className="absolute top-0 right-0 max-w-full w-[800px] h-[800px] bg-white/1.5 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-xl font-light tracking-[0.35em] text-white/40 uppercase mb-12 italic">Expert Photography Services in Kolkata</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-left">

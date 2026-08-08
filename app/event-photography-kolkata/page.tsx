@@ -201,8 +201,8 @@ export default function EventPhotographyPage() {
 
       {/* CTA Section */}
       <section className="relative py-32 px-6 md:px-12 bg-[#050505] text-white overflow-hidden rounded-[4rem] mx-4 mb-20">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/[0.015] rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-white/[0.005] rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl pointer-events-none" />
+        <div className="absolute top-0 right-0 max-w-full w-[800px] h-[800px] bg-white/[0.015] rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 max-w-full w-[600px] h-[600px] bg-white/[0.005] rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-light tracking-[0.25em] uppercase mb-12 leading-tight">Make Every Celebration Timeless</h2>
