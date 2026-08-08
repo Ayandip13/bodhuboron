@@ -48,11 +48,11 @@ export default function Hero() {
 
       {/* Hero content */}
       <div
-        className={`relative z-20 flex flex-col items-center justify-center px-6 sm:px-10 py-14 text-center max-w-3xl mx-auto transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        className={`relative z-20 flex flex-col items-center justify-center px-6 sm:px-10 py-14 text-center w-[90%] md:w-auto max-w-3xl mx-auto transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
       >
         {/* Glassmorphism depth layer - reduced blur for performance */}
-        <div className="mt-5 absolute inset-4 sm:inset-0 rounded-3xl bg-white/5 backdrop-blur-[2px] border border-white/10 shadow-2xl pointer-events-none" />
+        <div className="absolute inset-0 rounded-3xl bg-white/5 backdrop-blur-[2px] border border-white/10 shadow-2xl pointer-events-none" />
 
         {/* Eyebrow label */}
         <p
