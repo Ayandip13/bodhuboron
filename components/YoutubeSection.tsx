@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const youtubeVideos = [
-  { id: "2cxqsb4UJD4", title: "Cinematic Wedding Highlight" },
+  { id: "P77JDj2cCRA", title: "Cinematic Wedding Highlight" },
   { id: "n11i1EzpzOg", title: "Pre-Wedding Dreamscape" },
   { id: "KDS0BBoApGA", title: "Traditional Ceremony Film" },
   { id: "UA3JfJC_CkA", title: "Luxury Event Coverage" },
