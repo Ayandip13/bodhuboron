@@ -41,19 +41,15 @@ const events: EventItem[] = [
     objectPosition: "object-center",
     packages: [
       {
-        name: "Silver",
-        icon: "◈",
-        features: ["4 hours coverage", "1 Photographer", "60 Edited photos", "Traditional editing style"],
-      },
-      {
-        name: "Gold",
-        icon: "◆",
-        features: ["6 hours coverage", "1 Photographer + 1 Assistant", "120 Edited photos", "Cinematic highlights"],
-      },
-      {
-        name: "Platinum",
+        name: "Rice ceremony (15k)",
         icon: "✦",
-        features: ["Full event coverage", "2 Photographers", "Unlimited raw files", "Luxury album", "Family portraits included"],
+        features: [
+          "PhotoBook Album for 20 sheets",
+          "Cinematic Video 20-25 min",
+          "Trailer (2-3 min)",
+          "Reels for Instagram 2 Pic",
+          "20 Edit photos for social media photos",
+        ],
       },
     ],
   },
@@ -66,19 +62,15 @@ const events: EventItem[] = [
     objectPosition: "object-center",
     packages: [
       {
-        name: "Silver",
-        icon: "◈",
-        features: ["2 hours coverage", "1 Photographer", "30 Edited photos", "Quick turnaround"],
-      },
-      {
-        name: "Gold",
-        icon: "◆",
-        features: ["4 hours coverage", "1 Photographer", "70 Edited photos", "Engagement teaser video"],
-      },
-      {
-        name: "Platinum",
+        name: "Engagement (15k)",
         icon: "✦",
-        features: ["6 hours coverage", "2 Photographers", "120 Edited photos", "Cinematic story film", "Printed portraits"],
+        features: [
+          "PhotoBook Album for 20 sheets",
+          "Cinematic Video 20-25 min",
+          "Trailer (2-3 min)",
+          "Reels for Instagram 2 Pic",
+          "20 Edit photos for social media photos",
+        ],
       },
     ],
   },
@@ -91,19 +83,15 @@ const events: EventItem[] = [
     objectPosition: "object-top",
     packages: [
       {
-        name: "Silver",
-        icon: "◈",
-        features: ["2 hours coverage", "1 Photographer", "25 Edited photos", "Digital delivery"],
-      },
-      {
-        name: "Gold",
-        icon: "◆",
-        features: ["4 hours coverage", "1 Photographer", "60 Edited photos", "Anniversary highlight reel"],
-      },
-      {
-        name: "Platinum",
+        name: "Anniversary (15k)",
         icon: "✦",
-        features: ["Full celebration coverage", "2 Photographers", "150 Edited photos", "Cinematic documentary", "Commemorative album"],
+        features: [
+          "PhotoBook Album for 20 sheets",
+          "Cinematic Video 20-25 min",
+          "Trailer (2-3 min)",
+          "Reels for Instagram 2 Pic",
+          "20 Edit photos for social media photos",
+        ],
       },
     ],
   },
@@ -116,19 +104,15 @@ const events: EventItem[] = [
     objectPosition: "object-center",
     packages: [
       {
-        name: "Silver",
-        icon: "◈",
-        features: ["3 hours coverage", "1 Photographer", "40 Edited photos", "Thematic editing"],
-      },
-      {
-        name: "Gold",
-        icon: "◆",
-        features: ["5 hours coverage", "1 Photographer", "80 Edited photos", "Baby shower teaser"],
-      },
-      {
-        name: "Platinum",
+        name: "Baby Shower (15k)",
         icon: "✦",
-        features: ["Full event coverage", "1 Photographer + assistant", "150 Edited photos", "Cinematic film", "Maternity shoot add-on available"],
+        features: [
+          "PhotoBook Album for 20 sheets",
+          "Cinematic Video 20-25 min",
+          "Trailer (2-3 min)",
+          "Reels for Instagram 2 Pic",
+          "20 Edit photos for social media photos",
+        ],
       },
     ],
   },
@@ -264,18 +248,6 @@ export default function EventSection() {
               </div>
             ))}
 
-            {/* Decorative "More Coming" filler card to balance the grid on lg */}
-            <div className="hidden lg:flex relative h-72 sm:h-80 rounded-2xl overflow-hidden items-center justify-center border border-dashed border-neutral-800 group cursor-default">
-              <div className="text-center px-6">
-                <span className="text-neutral-700 text-2xl mb-3 block group-hover:text-neutral-500 transition-colors duration-300">✦</span>
-                <p className="text-[10px] tracking-[0.4em] uppercase text-neutral-700 font-medium group-hover:text-neutral-500 transition-colors duration-300">
-                  More Events
-                </p>
-                <p className="text-[9px] text-neutral-800 mt-1 tracking-wide group-hover:text-neutral-600 transition-colors duration-300">
-                  Coming Soon
-                </p>
-              </div>
-            </div>
           </div>
 
         </div>

@@ -72,6 +72,50 @@ export const eventPackages: PackageTier[] = [
     ],
   },
   {
+    name: "Rice ceremony (15k)",
+    description: "Photo + Video one day coverup",
+    features: [
+      "PhotoBook Album for 20 sheets",
+      "Cinematic Video 20-25 min",
+      "Trailer (2-3 min)",
+      "Reels for Instagram 2 Pic",
+      "20 Edit photos for social media photos",
+    ],
+  },
+  {
+    name: "Engagement (15k)",
+    description: "Photo + Video one day coverup",
+    features: [
+      "PhotoBook Album for 20 sheets",
+      "Cinematic Video 20-25 min",
+      "Trailer (2-3 min)",
+      "Reels for Instagram 2 Pic",
+      "20 Edit photos for social media photos",
+    ],
+  },
+  {
+    name: "Anniversary (15k)",
+    description: "Photo + Video one day coverup",
+    features: [
+      "PhotoBook Album for 20 sheets",
+      "Cinematic Video 20-25 min",
+      "Trailer (2-3 min)",
+      "Reels for Instagram 2 Pic",
+      "20 Edit photos for social media photos",
+    ],
+  },
+  {
+    name: "Baby Shower (15k)",
+    description: "Photo + Video one day coverup",
+    features: [
+      "PhotoBook Album for 20 sheets",
+      "Cinematic Video 20-25 min",
+      "Trailer (2-3 min)",
+      "Reels for Instagram 2 Pic",
+      "20 Edit photos for social media photos",
+    ],
+  },
+  {
     name: "Live Event Basic (8-10k)",
     description: "Essential coverage for your live events.",
     features: [
